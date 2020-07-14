@@ -10,11 +10,11 @@ let renderWord = function (word) {
         let wordLi = document.createElement('li');
         let wordLi__img = document.createElement('img');
         var audio = new Audio();
-        audio.src = 'audio/6.mp3';
+        audio.src = `audio\\${i+1}.mp3`;
         audio.play();
         wordUl.appendChild(wordLi);
         wordLi.appendChild(audio);
-        audio.setAttribute("muted", "muted");
+        //audio.setAttribute("muted", "muted");
         wordLi.className = 'js-word';
         wordLi.innerText = word[i].word + ' ' + word[i].translate;
         wordLi.appendChild(wordLi__img);
@@ -31,6 +31,7 @@ let renderWord = function (word) {
         let list = document.getElementsByClassName("js-word");
         for (let item of list) {
             if (item.id == wordList[index].id) {
+
             }
             else {
                 item.classList.remove("top");
