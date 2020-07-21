@@ -1,7 +1,7 @@
 const STEP3 = document.getElementById("task3");
 const MESSAGE = document.getElementById("message");
 let container = document.getElementById("container");
-//let wordUl = document.createElement('ul');
+
 let renderTurn = [3, 5, 1, 4, 2, 6];
 let step3Index = 0;
 let userChoise;
@@ -29,46 +29,39 @@ let renderWord = function (word) {
     if (container.children.length > 0) {
     }
     else {
-        let wordLi = document.createElement('li');
-        let wordLi__img = document.createElement('img');
+        let wordBlock = document.createElement('div');
+        let wordBlock__img = document.createElement('img');
         let audio = document.createElement('audio');
         let verifyBut = document.createElement('button');
-        let wordUl = document.createElement('ul');
-
-        wordLi.id = word.id;
-        wordLi.className = 'js-word';
-        wordLi__img.src = word.img;
+        wordBlock.id = word.id;
+        wordBlock.className = 'js-word';
+        wordBlock__img.src = word.img;
         audio.src = `audio\\${getDigit(word.id)}.mp3`;
         audio.className = `audio`;
         verifyBut.className = `btn`;
         verifyBut.id = `verifyBtn`;
         verifyBut.innerText = `Перевірити`;
         verifyBut.onclick = verify;
-
-        container.appendChild(wordUl);
-        wordUl.appendChild(wordLi);
-        wordLi.appendChild(wordLi__img);
-        wordLi.appendChild(audio);
+        container.appendChild(wordBlock);
+        wordBlock.appendChild(wordBlock__img);
+        wordBlock.appendChild(audio);
 
         for (let k = 0; k < renderTurn.length; k++) {
-            let wordLi__radio = document.createElement('input');
-            let wordLi__label = document.createElement('label');
-            wordLi__radio.setAttribute("type", "radio");
-            wordLi__radio.setAttribute("name", "radio");
-            wordLi__radio.setAttribute("id", `radio${k + 1}`);
-            wordLi__radio.setAttribute("value", `${k}`);
-            wordLi__radio.setAttribute("class", `radio`);
-            wordLi__radio.addEventListener('change', function() {
+            let wordBlock__radio = document.createElement('input');
+            let wordBlock__label = document.createElement('label');
+            wordBlock__radio.setAttribute("type", "radio");
+            wordBlock__radio.setAttribute("name", "radio");
+            wordBlock__radio.setAttribute("value", `${k}`);
+            wordBlock__radio.addEventListener('change', function() {
                 userChoise = this.value;
                 console.log(userChoise);
             });
-            wordLi__label.setAttribute("for", `radio${k + 1}`);
-            wordLi__label.innerText = words[k];
-
-            wordLi.appendChild(wordLi__radio);
-            wordLi.appendChild(wordLi__label);
+            wordBlock__label.setAttribute("for", `radio${k + 1}`);
+            wordBlock__label.innerText = words[k];
+            wordBlock.appendChild(wordBlock__radio);
+            wordBlock.appendChild(wordBlock__label);
         }
-        wordLi.appendChild(verifyBut);
+        wordBlock.appendChild(verifyBut);
     }
 }
 
@@ -83,7 +76,7 @@ STEP3.onclick = function () {
     STEP3.classList.add('btn--active');
     renderWord(wordList[step3Index]);
 
-    // showWord(wordList);
+    // showWord(wordBlockst);
 }
 
 let verify = function () {
