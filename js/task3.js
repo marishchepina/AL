@@ -2,7 +2,6 @@ const STEP3 = document.getElementById("task3");
 const MESSAGE = document.getElementById("message");
 let container = document.getElementById("container");
 
-let renderTurn = [3, 5, 1, 4, 2, 6];
 let step3Index = 0;
 let userChoise;
 let words = ["one", "two", "three", "four", "five", "six"];
@@ -33,7 +32,7 @@ let renderWord = function (word) {
         let wordBlock__img = document.createElement('img');
         let audio = document.createElement('audio');
         let verifyBut = document.createElement('button');
-        wordBlock.id = word.id;
+        wordBlock.id = 'wordBlock';
         wordBlock.className = 'js-word';
         wordBlock__img.src = word.img;
         audio.src = `audio\\${getDigit(word.id)}.mp3`;
@@ -45,26 +44,30 @@ let renderWord = function (word) {
         container.appendChild(wordBlock);
         wordBlock.appendChild(wordBlock__img);
         wordBlock.appendChild(audio);
-
-        for (let k = 0; k < renderTurn.length; k++) {
-            let wordBlock__radio = document.createElement('input');
-            let wordBlock__label = document.createElement('label');
-            wordBlock__radio.setAttribute("type", "radio");
-            wordBlock__radio.setAttribute("name", "radio");
-            wordBlock__radio.setAttribute("value", `${k}`);
-            wordBlock__radio.addEventListener('change', function() {
-                userChoise = this.value;
-                console.log(userChoise);
-            });
-            wordBlock__label.setAttribute("for", `radio${k + 1}`);
-            wordBlock__label.innerText = words[k];
-            wordBlock.appendChild(wordBlock__radio);
-            wordBlock.appendChild(wordBlock__label);
-        }
         wordBlock.appendChild(verifyBut);
+        radioButRender();
     }
 }
 
+
+
+let radioButRender = function(){
+    for (let k = 0; k < wordList.length; k++) {
+        let wordBlock = document.getElementById("wordBlock");
+        let wordBlock__radio = document.createElement('input');
+        let wordBlock__label = document.createElement('label');
+        wordBlock__radio.setAttribute("type", "radio");
+        wordBlock__radio.setAttribute("name", "radio");
+        wordBlock__radio.setAttribute("value", `${k}`);
+        wordBlock__radio.addEventListener('change', function() {
+            userChoise = this.value;
+        });
+        wordBlock__label.setAttribute("for", `radio${k + 1}`);
+        wordBlock__label.innerText = words[k];
+        wordBlock.appendChild(wordBlock__radio);
+        wordBlock.appendChild(wordBlock__label);
+    }
+}
 
 STEP3.onclick = function () {
     /*    let buttons = document.getElementsByClassName('btn');
@@ -90,12 +93,10 @@ let verify = function () {
             }
             renderWord(wordList[step3Index]);
             userChoise = undefined;
-            console.log(step3Index);
         }
         else {
             MESSAGE.classList.add('top');
             MESSAGE.innerText = `Направильно. Вибрано  ${userChoise} radiobutton`;
-            console.log(userChoise);
         }
 
     }
