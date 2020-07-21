@@ -22,8 +22,9 @@ let renderWord = function (word) {
 }
 
 let renderLetters = function (word) {
-    for (let i = 0; i > word.length; i++) {
+    for (let i = 0; i< word.length; i++) {
         let letters = word[i].word;
+        console.log(letters);
         letters = letters.split('');
 
 
@@ -45,6 +46,7 @@ let renderLetters = function (word) {
 
 
 STEP2.onclick = function () {
+    STEP2.classList.add('btn--active');
     renderWord(wordList);
     renderLetters(wordList);
 

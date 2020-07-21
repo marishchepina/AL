@@ -10,16 +10,18 @@ textarea:focus, input:focus {color: goldenrod;}
 
 
 
-#container    {margin: 0 auto; border: 1px solid #ccc; display: flex; align-items: center;justify-content: center; position: relative; max-width: 800px}
-.buttonBlock    {position: absolute; right: 0;  top: 50%; transform: translateY(-50%);width: 100px}
+#container      {margin: 0 auto; border: 1px solid #ccc; display: flex; align-items: center;justify-content: center; position: relative; max-width: 800px}
+.buttonBlock    {position: absolute; z-index: 100; right: 0;  top: 50%; transform: translateY(-50%);width: 100px}
 .btn            {cursor: pointer; background: #fff;border: 1px solid #ccc; color: #555; margin: 10px; padding: 3px 10px 3px 10px;font-size: 1.8rem;}
-.btn:hover, .btn:active  {background: #EC7263; color: #fff}
+.btn:hover, .btn--active  {background: #EC7263; color: #fff}
 .img            {display: flex}
+.top            {display: block !important; z-index: 999;}
+#message        {background: #566371; color: #fff; padding: 20px; width: 300px; min-height: 150px; position: absolute; display: none; right: 0; top: 0; transform: translate(-50%);}
 
 
 
 /*-------------------------------TASK 1------------------------------------------------*/
-#container ul {position: relative; width: 100%; height: 100%; }
+#container ul   {position: relative; width: 100%; height: 100%; }
 #container ul li{position: absolute; display: block; left: 0; top: 0; width: 100%; height: 100%; z-index: 1; background-color: ghostwhite;}
 #container ul li img{width: 100%; max-width: 400px}
 #container ul .top    {z-index: 10;}
@@ -27,4 +29,6 @@ textarea:focus, input:focus {color: goldenrod;}
 
 
 
-/*-------------------------------TASK 2------------------------------------------------*/
+/*-------------------------------TASK 3------------------------------------------------*/
+.radio:checked+label  {border: 1px solid #ccc}
+label                   {display: inline-block; padding: 5px;margin: 20px 0 0 0}
