@@ -1,7 +1,7 @@
 const STEP3 = document.getElementById("task3");
 const MESSAGE = document.getElementById("message");
 let container = document.getElementById("container");
-let wordUl = document.createElement('ul');
+//let wordUl = document.createElement('ul');
 let renderTurn = [3, 5, 1, 4, 2, 6];
 let step3Index = 0;
 let userChoise;
@@ -33,6 +33,7 @@ let renderWord = function (word) {
         let wordLi__img = document.createElement('img');
         let audio = document.createElement('audio');
         let verifyBut = document.createElement('button');
+        let wordUl = document.createElement('ul');
 
         wordLi.id = word.id;
         wordLi.className = 'js-word';
@@ -43,6 +44,7 @@ let renderWord = function (word) {
         verifyBut.id = `verifyBtn`;
         verifyBut.innerText = `Перевірити`;
         verifyBut.onclick = verify;
+
         container.appendChild(wordUl);
         wordUl.appendChild(wordLi);
         wordLi.appendChild(wordLi__img);
@@ -85,7 +87,7 @@ STEP3.onclick = function () {
 }
 
 let verify = function () {
-    if(userChoise !== null){
+    if(userChoise !== undefined){
         if (userChoise == step3Index) {
             MESSAGE.classList.add('top');
             MESSAGE.innerText = `Правильно!!!`;
@@ -94,11 +96,13 @@ let verify = function () {
                 container.removeChild(container.firstChild);
             }
             renderWord(wordList[step3Index]);
+            userChoise = undefined;
             console.log(step3Index);
         }
         else {
             MESSAGE.classList.add('top');
             MESSAGE.innerText = `Направильно. Вибрано  ${userChoise} radiobutton`;
+            console.log(userChoise);
         }
 
     }
@@ -106,29 +110,4 @@ let verify = function () {
         MESSAGE.classList.add('top');
         MESSAGE.innerText = `Виберіть слово.`;
     }
-    /*var rad = document.getElementsByClassName('radio');
-    for (var i = 0; i < rad.length; i++) {
-        if (rad[i].checked) {
-            let choise = rad[i].value;
-            console.log(typeof choise);
-            if (choise == step3Index) {
-                MESSAGE.classList.add('top');
-                MESSAGE.innerText = `Правильно!!!`;
-                step3Index++;
-                while (container.firstChild) {
-                    container.removeChild(container.firstChild);
-                }
-                renderWord(wordList[step3Index]);
-                console.log(step3Index);
-            }
-            else {
-                MESSAGE.classList.add('top');
-                MESSAGE.innerText = `Направильно. Вибрано  ${i} radiobutton`;
-            }
-        }
-        else {
-            MESSAGE.classList.add('top');
-            MESSAGE.innerText = `Виберіть слово.`;
-        }
-    }*/
 }
