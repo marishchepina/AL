@@ -1,10 +1,11 @@
 const STEP3 = document.getElementById("task3");
 const MESSAGE = document.getElementById("message");
 let container = document.getElementById("container");
-let step3Index = 0;
 let userChoise;
-let words = ["one", "two", "three", "four", "five", "six"];
+let wordsRadio = [];
+let wordTurn = [];
 var radioTurn = [];
+let wordTurnIndex = 0;
 
 
 let getDigit = function (digitName) {
@@ -24,19 +25,26 @@ let getDigit = function (digitName) {
     }
 }
 
-let turnArr = function () {
-    if (turnArr.length === 0) {
-        for (let k = 0; k < wordList.length; k++) {
-            radioTurn.push(k);
-        }
-        render(radioTurn);
-        console.log(radioTurn);
-        return radioTurn;
+
+let wordsForRadioButton = function (word, arr) {
+    for (let i = 0; i < wordList.length; i++){
+        arr.push(word[i].word);
 
     }
-    else{render(radioTurn);}
 }
-//(radioTurn);
+
+let turnArr = function (arr) {
+    if (arr.length === 0) {
+        for (let i = 0; i < wordList.length; i++) {
+            arr.push(i);
+        }
+        render(arr);
+        return arr;
+
+    }
+    else{render(arr);}
+}
+
 
 let renderWord = function (word) {
     if (container.children.length > 0) {
@@ -60,6 +68,7 @@ let renderWord = function (word) {
         wordBlock.appendChild(audio);
         wordBlock.appendChild(verifyBut);
         radioButRender(radioTurn);
+        audio.play();
     }
 }
 
@@ -74,11 +83,12 @@ let renderWord = function (word) {
             wordBlock__radio.setAttribute("type", "radio");
             wordBlock__radio.setAttribute("name", "radio");
             wordBlock__radio.setAttribute("value", `${arr[i]}`);
+            wordBlock__radio.setAttribute("id", `radio${arr[i]}`);
             wordBlock__radio.addEventListener('change', function () {
                 userChoise = this.value;
             });
-            wordBlock__label.setAttribute("for", `radio${arr[i] + 1}`);
-            wordBlock__label.innerText = words[arr[i]];
+            wordBlock__label.setAttribute("for", `radio${arr[i]}`);
+            wordBlock__label.innerText = wordsRadio[arr[i]];
             wordBlock.appendChild(wordBlock__radio);
             wordBlock.appendChild(wordBlock__label);
         }
@@ -91,23 +101,30 @@ let renderWord = function (word) {
          item.classlist.remove('active');
          }
          }*/
-        turnArr();
+        wordsForRadioButton(wordList, wordsRadio);
+        turnArr(radioTurn);
+        turnArr(wordTurn);
+        console.log(wordTurn);
         STEP3.classList.add('btn--active');
-        renderWord(wordList[step3Index]);
+        renderWord(wordList[wordTurn[wordTurnIndex]]);
 
         // showWord(wordBlockst);
     }
 
     let verify = function () {
         if (userChoise !== undefined) {
-            if (userChoise == step3Index) {
+            if (userChoise == wordTurn[wordTurnIndex]) {
                 MESSAGE.classList.add('top');
                 MESSAGE.innerText = `Правильно!!!`;
-                step3Index++;
+                wordTurnIndex++;
+                if (wordTurnIndex == wordList.length){
+                    MESSAGE.classList.add('top');
+                    MESSAGE.innerText = `${MESSAGE.innerText} Завдання виконано!`;
+                }
                 while (container.firstChild) {
                     container.removeChild(container.firstChild);
                 }
-                renderWord(wordList[step3Index]);
+                renderWord(wordList[wordTurn[wordTurnIndex]]);
                 userChoise = undefined;
             }
             else {
