@@ -38,7 +38,7 @@ let turnArr = function (arr) {
         for (let i = 0; i < wordList.length; i++) {
             arr.push(i);
         }
-        render(arr);
+        random(arr);
         return arr;
 
     }

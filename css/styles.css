@@ -29,6 +29,10 @@ textarea:focus, input:focus {color: goldenrod;}
 
 
 
+/*-------------------------------TASK 2------------------------------------------------*/
+#container .js-word     {font-size: 5rem; text-align: center}
+
+
 /*-------------------------------TASK 3------------------------------------------------*/
 .radio:checked+label  {border: 1px solid #ccc}
 label                   {display: inline-block; padding: 5px;margin: 20px 0 0 0}
