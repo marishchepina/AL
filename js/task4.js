@@ -5,9 +5,8 @@ let userChoise;
 let wordsRadio = [];
 let wordTurn = [];
 var letters = [];
-//let wordTurnIndex = 0;
+let wordTurnIndex = 0;
 let userWordArray = [];
-let k;
 
 
 let getDigit = function (digitName) {
@@ -45,9 +44,8 @@ let turnArr = function (arr) {
 
     }
     else {
-        random(arr);
+        render(arr);
     }
-
 }
 
 
@@ -78,9 +76,8 @@ let renderWord = function (word) {
 }
 
 let renderLetters = function (word) {
-    console.log(word.word);
     letters = word.word;
-    console.log(word.word);
+
     letters = letters.split('');
     letters = random(letters);
     console.log(letters);
@@ -104,16 +101,25 @@ let radioButRender = function (arr) {
 }
 
 STEP4.onclick = function () {
-    STEP4.classList.add('btn--active');
+    /*    let buttons = document.getElementsByClassName('btn');
+     for (item in buttons) {
+     if (item.classList.contains("active")) {
+     item.classlist.remove('active');
+     }
+     }*/
+
     wordsForRadioButton(wordList, wordsRadio);
+    // turnArr(radioTurn);
     turnArr(wordTurn);
-    for (let i=0; i<wordTurn.length; i++)
-    { k = wordTurn[i];
-        console.log(wordTurn);
-        renderWord(wordList[k]);
-        renderLetters(wordList[k]);
-        console.log(wordList[k]);
-        radioButRender(letters);}
+    console.log(wordsRadio);
+    //console.log(wordList);
+
+    renderLetters(wordList[wordTurn[0]]);
+    //console.log(renderLetterswordList[wordTurn[wordTurnIndex]]);
+    STEP4.classList.add('btn--active');
+    renderWord(wordList[wordTurn[wordTurnIndex]]);
+    console.log(wordList[wordTurn[wordTurnIndex]]);
+    // showWord(wordBlockst);
 }
 
 
@@ -138,10 +144,10 @@ let userWordMaking = function () {
 let verify = function () {
     userWordArray = userWordArray.join('');
     console.log(userWordArray);
-    console.log(wordList[wordTurn[k]].word);
+    console.log(wordList[wordTurn[wordTurnIndex]].word);
 
 
-    if (userWordArray == wordList[wordTurn[k]].word) {
+    if (userWordArray == wordList[wordTurn[wordTurnIndex]].word) {
         MESSAGE.classList.add('top');
         MESSAGE.innerText = `Правильно!!!`;
     }
@@ -156,7 +162,6 @@ let verify = function () {
     }
     //userWord.innerText = ''
 }
-
 
 
 
