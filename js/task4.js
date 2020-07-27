@@ -4,9 +4,9 @@ let container = document.getElementById("container");
 let userChoise;
 let wordsRadio = [];
 let wordTurn = [];
-var radioTurn = [];
+var letters = [];
 let wordTurnIndex = 0;
-
+let userWordArray = [];
 
 
 let getDigit = function (digitName) {
@@ -70,11 +70,18 @@ let renderWord = function (word) {
         wordBlock.appendChild(wordBlock__img);
         wordBlock.appendChild(audio);
         wordBlock.appendChild(verifyBut);
-        radioButRender(radioTurn);
+        radioButRender(letters);
         audio.play();
     }
 }
 
+let renderLetters = function (word) {
+    letters = word.word;
+
+    letters = letters.split('');
+    letters = random(letters);
+    console.log(letters);
+}
 
 let radioButRender = function (arr) {
     for (let i = 0; i < arr.length; i++) {
@@ -85,11 +92,9 @@ let radioButRender = function (arr) {
         wordBlock__radio.setAttribute("name", "radio");
         wordBlock__radio.setAttribute("value", `${arr[i]}`);
         wordBlock__radio.setAttribute("id", `radio${arr[i]}`);
-        wordBlock__radio.addEventListener('change', function () {
-            userChoise = this.value;
-        });
+        wordBlock__radio.addEventListener('change', userWordMaking);
         wordBlock__label.setAttribute("for", `radio${arr[i]}`);
-        wordBlock__label.innerText = wordsRadio[arr[i]];
+        wordBlock__label.innerText = arr[i];
         wordBlock.appendChild(wordBlock__radio);
         wordBlock.appendChild(wordBlock__label);
     }
@@ -104,38 +109,30 @@ STEP4.onclick = function () {
      }*/
 
     wordsForRadioButton(wordList, wordsRadio);
-    turnArr(radioTurn);
+    // turnArr(radioTurn);
     turnArr(wordTurn);
     console.log(wordsRadio);
-    renderLetters(wordList[wordTurn[wordTurnIndex]]);
-    console.log(renderLetterswordList[wordTurn[wordTurnIndex]]);
+    //console.log(wordList);
+
+    renderLetters(wordList[wordTurn[0]]);
+    //console.log(renderLetterswordList[wordTurn[wordTurnIndex]]);
     STEP4.classList.add('btn--active');
     renderWord(wordList[wordTurn[wordTurnIndex]]);
     console.log(wordList[wordTurn[wordTurnIndex]]);
     // showWord(wordBlockst);
 }
 
-let verify = function () {
-    if (userChoise !== undefined) {
-        if (userChoise == wordTurn[wordTurnIndex]) {
-            MESSAGE.classList.add('top');
-            MESSAGE.innerText = `Правильно!!!`;
-            wordTurnIndex++;
-            if (wordTurnIndex == wordList.length) {
-                MESSAGE.classList.add('top');
-                MESSAGE.innerText = `${MESSAGE.innerText} Завдання виконано!`;
-            }
-            while (container.firstChild) {
-                container.removeChild(container.firstChild);
-            }
-            renderWord(wordList[wordTurn[wordTurnIndex]]);
-            userChoise = undefined;
-        }
-        else {
-            MESSAGE.classList.add('top');
-            MESSAGE.innerText = `Направильно. Вибрано  ${userChoise} radiobutton`;
-        }
 
+let userWordMaking = function () {
+    userChoise = this.value;
+    console.log(userChoise);
+    if (userChoise !== undefined) {
+        //userChoise.setAttribute("color", `red`);
+        let userWord = document.createElement('div');
+        container.appendChild(userWord);
+        userWord.innerText = userWord.innerText + userChoise;
+        userWordArray.push(userChoise);
+        console.log(userWordArray);
     }
     else {
         MESSAGE.classList.add('top');
@@ -144,9 +141,28 @@ let verify = function () {
 }
 
 
-let renderLetters = function (word) {
-    letters = word;
-    letters = letters.split('');
-    letters = random(letters);
-    console.log(letters);
+let verify = function () {
+    userWordArray = userWordArray.join('');
+    console.log(userWordArray);
+    console.log(wordList[wordTurn[wordTurnIndex]].word);
+
+
+    if (userWordArray == wordList[wordTurn[wordTurnIndex]].word) {
+        MESSAGE.classList.add('top');
+        MESSAGE.innerText = `Правильно!!!`;
+    }
+    else if (userWordArray = []){
+        MESSAGE.classList.add('top');
+        MESSAGE.innerText = `Введіть слово.`;
+    }
+    else {
+        //userWord.innerText = '';
+        MESSAGE.classList.add('top');
+        MESSAGE.innerText = `Помилка, спробуй ще раз.`;
+    }
+    //userWord.innerText = ''
 }
+
+
+
+
