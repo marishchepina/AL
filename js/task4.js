@@ -95,9 +95,9 @@ let radioButRender = function (arr) {
         wordBlock__radio.setAttribute("type", "radio");
         wordBlock__radio.setAttribute("name", "radio");
         wordBlock__radio.setAttribute("value", `${arr[i]}`);
-        wordBlock__radio.setAttribute("id", `radio${arr[i]}`);
         wordBlock__radio.addEventListener('change', userWordMaking);
-        wordBlock__label.setAttribute("for", `radio${arr[i]}`);
+        wordBlock__radio.setAttribute("id", `radio--${arr[i]}`);
+        wordBlock__label.setAttribute("for", `radio--${arr[i]}`);
         wordBlock__label.innerText = arr[i];
         wordBlock.appendChild(wordBlock__radio);
         wordBlock.appendChild(wordBlock__label);
@@ -123,14 +123,17 @@ STEP4.onclick = function () {
 
 
 let userWordMaking = function () {
+    clicked = this;
     userChoise = this.value;
     console.log(userChoise);
     if (userChoise !== undefined) {
-        //userWord.setAttribute("id", `userWord`);
+        clicked.setAttribute("id", `userChoise`);
         container.appendChild(userWord);
         userWord.innerText = userWord.innerText + userChoise;
         userWordArray.push(userChoise);
+        //document.getElementById("verifyBut");
         console.log(userWordArray);
+        this.remove();
     }
     else {
         MESSAGE.classList.add('top');
