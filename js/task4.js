@@ -1,6 +1,7 @@
 const STEP4 = document.getElementById("task4");
 const MESSAGE = document.getElementById("message");
 let container = document.getElementById("container");
+let verifyBut = document.getElementById("verifyBut");
 let userChoise;
 let wordsRadio = [];
 let wordTurn = [];
@@ -57,11 +58,13 @@ let renderWord = function (word) {
         let wordBlock__img = document.createElement('img');
         let audio = document.createElement('audio');
         let verifyBut = document.createElement('button');
+        let userWord = document.createElement('div');
         wordBlock.id = 'wordBlock';
         wordBlock.className = 'js-word';
         wordBlock__img.src = word.img;
         audio.src = `audio\\${getDigit(word.id)}.mp3`;
         audio.className = `audio`;
+        userWord.setAttribute("id", `userWord`);
         verifyBut.className = `btn`;
         verifyBut.id = `verifyBtn`;
         verifyBut.innerText = `Перевірити`;
@@ -69,6 +72,7 @@ let renderWord = function (word) {
         container.appendChild(wordBlock);
         wordBlock.appendChild(wordBlock__img);
         wordBlock.appendChild(audio);
+        wordBlock.appendChild(userWord);
         wordBlock.appendChild(verifyBut);
         radioButRender(letters);
         audio.play();
@@ -107,19 +111,14 @@ STEP4.onclick = function () {
      item.classlist.remove('active');
      }
      }*/
-
     wordsForRadioButton(wordList, wordsRadio);
     // turnArr(radioTurn);
     turnArr(wordTurn);
-    console.log(wordsRadio);
-    //console.log(wordList);
-
-    renderLetters(wordList[wordTurn[0]]);
+    renderLetters(wordList[wordTurn[wordTurnIndex]]);
     //console.log(renderLetterswordList[wordTurn[wordTurnIndex]]);
     STEP4.classList.add('btn--active');
     renderWord(wordList[wordTurn[wordTurnIndex]]);
-    console.log(wordList[wordTurn[wordTurnIndex]]);
-    // showWord(wordBlockst);
+    verifyBut.onclick = verify;
 }
 
 
@@ -127,8 +126,7 @@ let userWordMaking = function () {
     userChoise = this.value;
     console.log(userChoise);
     if (userChoise !== undefined) {
-        //userChoise.setAttribute("color", `red`);
-        let userWord = document.createElement('div');
+        //userWord.setAttribute("id", `userWord`);
         container.appendChild(userWord);
         userWord.innerText = userWord.innerText + userChoise;
         userWordArray.push(userChoise);
@@ -143,24 +141,38 @@ let userWordMaking = function () {
 
 let verify = function () {
     userWordArray = userWordArray.join('');
-    console.log(userWordArray);
-    console.log(wordList[wordTurn[wordTurnIndex]].word);
+    //console.log(userWordArray);
+    //console.log(wordList[wordTurn[wordTurnIndex]].word);
 
 
     if (userWordArray == wordList[wordTurn[wordTurnIndex]].word) {
         MESSAGE.classList.add('top');
         MESSAGE.innerText = `Правильно!!!`;
+        wordTurnIndex++;
+        if (wordTurnIndex == wordList.length){
+            MESSAGE.classList.add('top');
+            MESSAGE.innerText = `${MESSAGE.innerText} Завдання виконано!`;
+        }
+        while (container.firstChild) {
+            container.removeChild(container.firstChild);
+        }
+        renderLetters(wordList[wordTurn[wordTurnIndex]]);
+        renderWord(wordList[wordTurn[wordTurnIndex]]);
+        userChoise = undefined;
+        userWordArray = [];
     }
-    else if (userWordArray = []){
+    else if (userWordArray === []){
         MESSAGE.classList.add('top');
         MESSAGE.innerText = `Введіть слово.`;
     }
     else {
-        //userWord.innerText = '';
         MESSAGE.classList.add('top');
         MESSAGE.innerText = `Помилка, спробуй ще раз.`;
+        userChoise = undefined;
+        userWordArray = [];
+        let userWord = document.getElementById("userWord");
+        userWord.innerText = '';
     }
-    //userWord.innerText = ''
 }
 
 

@@ -3,6 +3,7 @@ let container = document.getElementById("container");
 let wordUl = document.createElement('ul');
 container.appendChild(wordUl);
 let index = 0;
+let cycleCounter = 0;
 
 let renderWord = function (word) {
     for (let i = 0; i < word.length; i++) {
@@ -22,16 +23,16 @@ let renderWord = function (word) {
         wordLi.appendChild(audio);
     }
 }
-let i=0;
+
 
     function showWord(listOfWords) {
         li = document.getElementById(wordList[index].id);
         li.classList.add("top");
         let list = document.getElementsByClassName("js-word");
         let audiolist = document.getElementsByClassName("audio");
-        i++;
-        if (i >= listOfWords.length) {
-            i = 0;
+        cycleCounter++;
+        if (cycleCounter >= listOfWords.length) {
+            cycleCounter = 0;
         }
 
 
@@ -52,7 +53,7 @@ let i=0;
 
     let animate = setInterval(function () {
         showWord(wordList)
-    }, 3000);
+    }, 4000);
 
     function stop() {
         clearInterval(animate);
