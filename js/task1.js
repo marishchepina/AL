@@ -1,28 +1,8 @@
-const STEP1 = document.getElementById("task1");
-let container = document.getElementById("container");
-let index = 0;
-let cycleCounter = 0;
-
-STEP1.onclick = function () {
-    renderWord(wordList);
-    showWord(wordList);
-
-
-/*    const wrapObj = document.querySelector('.container');
-    wrapObj.onclick=function(e){
-        for(let i = 0;i<wrapObj.children.length;i++){
-            wrapObj.children[i].classList.remove('active');
-        }
-        e.target.classList.add('active');
-
-    }*/
-}
 
 let renderWord = function (word) {
     for (let i = 0; i < word.length; i++) {
         let task1 = document.createElement('div');
         let task1__img = document.createElement('img');
-        //let task1__img__img = document.createElement('img');
         let task1__word = document.createElement('div');
         let task1__word__translation = document.createElement('div');
         let audio = document.createElement('audio');
@@ -40,7 +20,6 @@ let renderWord = function (word) {
 
         container.appendChild(task1);
         task1.appendChild(task1__img);
-        //task1__img.appendChild(task1__img__img);
         task1.appendChild(task1__word);
         task1__word.appendChild(task1__word__translation);
         task1.appendChild(audio);
@@ -70,11 +49,19 @@ function showWord(listOfWords) {
         index = 0;
     }
 }
-
-let animate = setInterval(function () {
-    showWord(wordList)
-}, 4000);
-
-function stop() {
-    clearInterval(animate);
+let intervalVar;
+let animate = function(){showWord(wordList);
+    intervalVar = setInterval(function () {
+        showWord(wordList);
+    }, 4000);
 }
+
+
+
+ let stopAnimate = function() {
+     clearInterval(intervalVar);
+     while (container.firstChild) {
+         container.removeChild(container.firstChild);
+     }
+ }
+

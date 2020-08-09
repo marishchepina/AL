@@ -10,98 +10,22 @@
 <body>
 <input type="checkbox" id="nav-toggle" hidden>
 <nav class="nav">
-    <!--
-Метка с именем `id` чекбокса в `for` атрибуте
-Символ Unicode 'TRIGRAM FOR HEAVEN' (U+2630)
-Пустой атрибут `onclick` используем для исправления бага в iOS < 6.0
-См: http://timpietrusky.com/advanced-checkbox-hack
--->
     <label for="nav-toggle" class="nav-toggle" onclick></label>
-    <!--
-Здесь размещаете любую разметку,
-если это меню, то скорее всего неупорядоченный список <ul>
--->
-    <ul>
-        <li>Головне меню</li>
-        <li>Слова</li>
-        <li>Завдання 1</li>
-        <li>Завдання 2</li>
-        <li>Завдання 3</li>
+    <ul class="buttonBlock">
+        <!-- <li id="btn&#45;&#45;task1" class="btn">Головне меню</li>-->
+        <li><button id="btn--task1" class="btn">Слова</button></li>
+        <li><button id="btn--task2" class="btn">Завдання 1</button></li>
+        <li><button id="btn--task3" class="btn">Завдання 2</button></li>
+        <li><button id="btn--task4" class="btn">Завдання 3</button></li>
     </ul>
 </nav>
-<div class="buttonBlock">
-    <button id="task1" class="btn">Task 1</button>
-    <button id="task2" class="btn">Task 2</button>
-    <button id="task3" class="btn">Task 3</button>
-    <button id="task4" class="btn">Task 4</button>
-</div>
-
-<div id="container">
-   <!--task1-->
-   <!-- <img class="task1__img" src="img/1.jpg">
-    <div class="task1__word">слово</div>
-    <div class="task1__translation">переклад</div>-->
-
-
-    <!---task2-->
-     <!--<div class="task2__word">слово</div>
-
-    <input type="radio" id="radio0" name="radio">
-    <label class="task2__label" for="radio0"><img src="img/1.jpg" class="task2__img"></label>
-    <input type="radio" id="radio1" name="radio">
-    <label class="task2__label" for="radio1"><img src="img/2.jpg" class="task2__img"></label>
-    <input type="radio" id="radio2" name="radio">
-    <label class="task2__label" for="radio2"><img src="img/5.jpg" class="task2__img"></label>
-    <input type="radio" id="radio3" name="radio">
-    <label class="task2__label" for="radio3"><img src="img/4.jpg" class="task2__img"></label>
-    <input type="radio" id="radio4" name="radio">
-    <label class="task2__label" for="radio4"><img src="img/6.jpg" class="task2__img"></label>
-    <input type="radio" id="radio5" name="radio">
-    <label class="task2__label" for="radio5"><img src="img/3.jpg" class="task2__img"></label>
-    <button class="btn btn--verify">Перевірити</button>-->
-
-
-    <!---task3-->
-    <!--<div class="task3__img"><img src="img/1.jpg" class="task2__img"></div>
-
-   <input type="radio" id="radio0" name="radio">
-   <label class="task3__label" for="radio0">слово1</label>
-   <input type="radio" id="radio1" name="radio">
-   <label class="task3__label" for="radio1">слово2</label>
-   <input type="radio" id="radio2" name="radio">
-   <label class="task3__label" for="radio2">слово3</label>
-   <input type="radio" id="radio3" name="radio">
-   <label class="task3__label" for="radio3">слово4</label>
-   <input type="radio" id="radio4" name="radio">
-   <label class="task3__label" for="radio4">слово5</label>
-   <input type="radio" id="radio5" name="radio">
-   <label class="task3__label" for="radio5">слово6</label>
-   <button class="btn btn--verify">Перевірити</button>-->
-
-
-    <!---task3-->
-    <!--<div class="task4__img"><img src="img/1.jpg" class="task2__img"></div>
-    <div class="task4__word">слово</div>
-    <div class="task4__letters">
-        <input type="radio" id="radio0" name="radio">
-        <label class="task4__label" for="radio0">с</label>
-        <input type="radio" id="radio1" name="radio">
-        <label class="task4__label" for="radio1">л</label>
-        <input type="radio" id="radio2" name="radio">
-        <label class="task4__label" for="radio2">о</label>
-        <input type="radio" id="radio3" name="radio">
-        <label class="task4__label" for="radio3">в</label>
-        <input type="radio" id="radio4" name="radio">
-        <label class="task4__label" for="radio4">о</label>
-        <input type="radio" id="radio5" name="radio">
-        <label class="task4__label" for="radio5">с</label>
-    </div>
-
-    <button class="btn btn--verify">Перевірити</button>-->
-</div>
 <div id="message"></div>
+<div id="container"></div>
 <script src="js/data.js"></script>
 <script src="js/main.js"></script>
 <script src="js/task1.js"></script>
+<script src="js/task2.js"></script>
+<!--<script src="js/task3.js"></script>
+<script src="js/task4.js"></script>-->
 </body>
 </html>

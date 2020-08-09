@@ -1,140 +1,80 @@
-const STEP3 = document.getElementById("task3");
-const MESSAGE = document.getElementById("message");
-let container = document.getElementById("container");
-let userChoise;
-let wordsRadio = [];
-let wordTurn = [];
-var radioTurn = [];
-let wordTurnIndex = 0;
 
-
-let getDigit = function (digitName) {
-    switch (digitName) {
-        case "one":
-            return 1;
-        case "two":
-            return 2;
-        case "three":
-            return 3;
-        case "four":
-            return 4;
-        case "five":
-            return 5;
-        case "six":
-            return 6;
-    }
-}
-
-
-let wordsForRadioButton = function (word, arr) {
-    for (let i = 0; i < wordList.length; i++){
-        arr.push(word[i].word);
-
-    }
-}
-
-let turnArr = function (arr) {
-    if (arr.length === 0) {
-        for (let i = 0; i < wordList.length; i++) {
-            arr.push(i);
-        }
-        random(arr);
-        return arr;
-
-    }
-    else{render(arr);}
-}
-
-
-let renderWord = function (word) {
+let renderWordTask3 = function (word) {
     if (container.children.length > 0) {
     }
     else {
-        let wordBlock = document.createElement('div');
-        let wordBlock__img = document.createElement('img');
-        let audio = document.createElement('audio');
+        let task3 = document.createElement('div');
+        let task3__img = document.createElement('img');
+        let task3__radioBlock = document.createElement('div');
+        //let audio = document.createElement('audio');
         let verifyBut = document.createElement('button');
-        wordBlock.id = 'wordBlock';
-        wordBlock.className = 'js-word';
-        wordBlock__img.src = word.img;
-        audio.src = `audio\\${getDigit(word.id)}.mp3`;
-        audio.className = `audio`;
+        task3.id = 'task3';
+        task3__img.src = word.img;
+        //audio.src = `audio\\${getDigit(word.id)}.mp3`;
+        //audio.className = `audio`;
+        task3__radioBlock.id = `task3__radioBlock`
         verifyBut.className = `btn`;
         verifyBut.id = `verifyBtn`;
         verifyBut.innerText = `Перевірити`;
-        verifyBut.onclick = verify;
-        container.appendChild(wordBlock);
-        wordBlock.appendChild(wordBlock__img);
-        wordBlock.appendChild(audio);
-        wordBlock.appendChild(verifyBut);
-        radioButRender(radioTurn);
-        audio.play();
+        verifyBut.onclick = verifyTask3;
+        verifyBut.className = `btn btn--verify`;
+        container.appendChild(task3);
+        task3.appendChild(task3__img);
+        task3.appendChild(task3__radioBlock);
+        //task3.appendChild(audio);
+        radioButRenderTask3(radioTurn);
+        task3.appendChild(verifyBut);
+        //audio.play();
     }
 }
 
 
-
-
-    let radioButRender = function (arr) {
-        for (let i = 0; i < arr.length; i++) {
-            let wordBlock = document.getElementById("wordBlock");
-            let wordBlock__radio = document.createElement('input');
-            let wordBlock__label = document.createElement('label');
-            wordBlock__radio.setAttribute("type", "radio");
-            wordBlock__radio.setAttribute("name", "radio");
-            wordBlock__radio.setAttribute("value", `${arr[i]}`);
-            wordBlock__radio.setAttribute("id", `radio${arr[i]}`);
-            wordBlock__radio.addEventListener('change', function () {
-                userChoise = this.value;
-            });
-            wordBlock__label.setAttribute("for", `radio${arr[i]}`);
-            wordBlock__label.innerText = wordsRadio[arr[i]];
-            wordBlock.appendChild(wordBlock__radio);
-            wordBlock.appendChild(wordBlock__label);
-        }
+let radioButRenderTask3 = function (arr) {
+    for (let i = 0; i < arr.length; i++) {
+        let task3__radioBlock = document.getElementById("task3__radioBlock");
+        let task3__radioBlock__radio = document.createElement('input');
+        let task3__radioBlock__label = document.createElement('label');
+        task3__radioBlock__radio.setAttribute("type", "radio");
+        task3__radioBlock__radio.setAttribute("name", "radio");
+        task3__radioBlock__radio.setAttribute("value", `${arr[i]}`);
+        task3__radioBlock__radio.setAttribute("id", `radio${arr[i]}`);
+        task3__radioBlock__radio.addEventListener('change', function () {
+            userChoise = this.value;
+        });
+        task3__radioBlock__label.setAttribute("for", `radio${arr[i]}`);
+        task3__radioBlock__label.innerText = wordsRadio[arr[i]];
+        task3__radioBlock__label.className = `task3__label`;
+        task3__radioBlock.appendChild(task3__radioBlock__radio);
+        task3__radioBlock.appendChild(task3__radioBlock__label);
     }
+}
 
-    STEP3.onclick = function () {
-        /*    let buttons = document.getElementsByClassName('btn');
-         for (item in buttons) {
-         if (item.classList.contains("active")) {
-         item.classlist.remove('active');
-         }
-         }*/
-        wordsForRadioButton(wordList, wordsRadio);
-        turnArr(radioTurn);
-        turnArr(wordTurn);
-        console.log(wordTurn);
-        STEP3.classList.add('btn--active');
-        renderWord(wordList[wordTurn[wordTurnIndex]]);
 
-        // showWord(wordBlockst);
-    }
-
-    let verify = function () {
-        if (userChoise !== undefined) {
-            if (userChoise == wordTurn[wordTurnIndex]) {
+let verifyTask3 = function () {
+    if (userChoise !== undefined) {
+        if (userChoise == wordTurn[wordTurnIndex]) {
+            MESSAGE.classList.add('top');
+            MESSAGE.innerText = `Правильно!!!`;
+            wordTurnIndex++;
+            if (wordTurnIndex == wordList.length) {
                 MESSAGE.classList.add('top');
-                MESSAGE.innerText = `Правильно!!!`;
-                wordTurnIndex++;
-                if (wordTurnIndex == wordList.length){
-                    MESSAGE.classList.add('top');
-                    MESSAGE.innerText = `${MESSAGE.innerText} Завдання виконано!`;
-                }
-                while (container.firstChild) {
-                    container.removeChild(container.firstChild);
-                }
-                renderWord(wordList[wordTurn[wordTurnIndex]]);
-                userChoise = undefined;
+                MESSAGE.innerText = `${MESSAGE.innerText} Завдання виконано!`;
             }
-            else {
-                MESSAGE.classList.add('top');
-                MESSAGE.innerText = `Направильно. Вибрано  ${userChoise} radiobutton`;
+            while (container.firstChild) {
+                container.removeChild(container.firstChild);
             }
-
+            renderWordTask3(wordList[wordTurn[wordTurnIndex]]);
+            userChoise = undefined;
         }
         else {
             MESSAGE.classList.add('top');
-            MESSAGE.innerText = `Виберіть слово.`;
+            MESSAGE.innerText = `Направильно. Вибрано  ${userChoise} radiobutton`;
         }
+
     }
+    else {
+        MESSAGE.classList.add('top');
+        MESSAGE.innerText = `Виберіть слово.`;
+    }
+}
+
