@@ -60,8 +60,6 @@ let animate = function(){showWord(wordList);
 
  let stopAnimate = function() {
      clearInterval(intervalVar);
-     while (container.firstChild) {
-         container.removeChild(container.firstChild);
-     }
+     cleanContainer();
  }
 

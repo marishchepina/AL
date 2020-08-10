@@ -114,3 +114,40 @@ STEP4.onclick = function () {
     verifyBut.onclick = verifyTask4;
     document.getElementById('nav-toggle').checked=false;
 }
+
+
+let cleanContainer = function(){
+    while (container.firstChild) {
+        container.removeChild(container.firstChild);
+    }
+}
+
+let messageSucces = function(){
+    MESSAGE.classList.add('top');
+    let messageErrorImg = document.createElement('img');
+    messageErrorImg.src = 'img/emotion/glad.gif';
+    messageErrorImg.id = 'message__img';
+    MESSAGE.appendChild(messageErrorImg);
+    setTimeout(function(){
+        MESSAGE.classList.remove("top");
+        MESSAGE.removeChild(MESSAGE.firstChild);
+    }, 4000);
+}
+
+let messageFinish = function(){
+    messageSucces();
+    let message__img = document.getElementById('message__img');
+    message__img.src = 'img/emotion/box.gif';
+}
+
+let messageCry = function(){
+    messageSucces();
+    let message__img = document.getElementById('message__img');
+    message__img.src = 'img/emotion/cry.gif';
+}
+
+let messageButtonNotPressed = function(){
+    messageSucces();
+    let message__img = document.getElementById('message__img');
+    message__img.src = 'img/emotion/lazy.gif';
+}
