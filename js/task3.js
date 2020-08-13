@@ -59,6 +59,7 @@ let verifyTask3 = function () {
             if (wordTurnIndex == wordList.length) {
                 MESSAGE.classList.add('top');
                 MESSAGE.innerText = `${MESSAGE.innerText} Завдання виконано!`;
+
             }
             while (container.firstChild) {
                 container.removeChild(container.firstChild);

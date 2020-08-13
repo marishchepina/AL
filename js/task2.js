@@ -70,9 +70,8 @@ let verifyTask2 = function () {
         else if (userChoise == wordTurn[wordTurnIndex] && (wordTurnIndex == (wordList.length-1))) {
             messageFinish();
             cleanContainer();
-            //wordTurnIndex = 0;
-            //renderWordTask2(wordList[wordTurn[wordTurnIndex]]);
             userChoise = undefined;
+            wordTurnIndex = 0;
         }
         else {messageCry();}
 

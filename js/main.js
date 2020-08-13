@@ -86,6 +86,7 @@ STEP2.onclick = function () {
     removeClassBtnActiv;
     STEP2.classList.add('btn--active');
     stopAnimate();
+    hideMessage();
     imgsForRadioButton(wordList, imgsRadio);
     turnArr(radioTurn);
     turnArr(wordTurn);
@@ -122,32 +123,41 @@ let cleanContainer = function(){
     }
 }
 
+let hideMessage = function(){
+    while (MESSAGE.firstChild) {
+        MESSAGE.removeChild(MESSAGE.firstChild);
+    }
+    MESSAGE.classList.remove("top");
+}
+
 let messageSucces = function(){
     MESSAGE.classList.add('top');
-    let messageErrorImg = document.createElement('img');
-    messageErrorImg.src = 'img/emotion/glad.gif';
-    messageErrorImg.id = 'message__img';
-    MESSAGE.appendChild(messageErrorImg);
+    MESSAGE.style.backgroundImage = "url('img/emotion/glad.gif')";
     setTimeout(function(){
         MESSAGE.classList.remove("top");
-        MESSAGE.removeChild(MESSAGE.firstChild);
     }, 4000);
 }
 
 let messageFinish = function(){
-    messageSucces();
-    let message__img = document.getElementById('message__img');
-    message__img.src = 'img/emotion/box.gif';
+    MESSAGE.classList.add('top');
+    let MESSAGE__text = document.createElement('div');
+    MESSAGE.style.backgroundImage = "url('img/emotion/box.gif')";
+    MESSAGE__text.innerText = "Завдання завершено!";
+    MESSAGE.appendChild(MESSAGE__text);
 }
 
 let messageCry = function(){
-    messageSucces();
-    let message__img = document.getElementById('message__img');
-    message__img.src = 'img/emotion/cry.gif';
+    MESSAGE.classList.add('top');
+    MESSAGE.style.backgroundImage = "url('img/emotion/cry.gif')";
+    setTimeout(function(){
+        MESSAGE.classList.remove("top");
+    }, 4000);
 }
 
 let messageButtonNotPressed = function(){
-    messageSucces();
-    let message__img = document.getElementById('message__img');
-    message__img.src = 'img/emotion/lazy.gif';
+    MESSAGE.classList.add('top');
+    MESSAGE.style.backgroundImage = "url('img/emotion/lazy.gif')";
+    setTimeout(function(){
+        MESSAGE.classList.remove("top");
+    }, 4000);
 }
