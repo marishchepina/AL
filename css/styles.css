@@ -8,7 +8,7 @@ ul          {list-style-type: none}
 label       {display: block; cursor: pointer;}
 label img   {height: 100%; width: auto;}
 input[type="radio"]{display: none}
-#container input[type="radio"]:checked + label {opacity: 1}
+#container input[type="radio"]:checked + label {opacity: 1; border: 3px solid #e55842;}
 
 
 #container      {margin: 0 auto; padding: 5%;text-align: center; position: relative; max-width: 800px; flex-wrap: wrap; font-size: 7rem; line-height: 8rem;}
@@ -24,6 +24,11 @@ input[type="radio"]{display: none}
 #message img    {max-width: 100%; height: auto; }
 .btn--verify    {width: 90%; height: 5rem; margin: 1.5rem auto 1.5rem auto}
 #container  #task4 .disabled       {display: none; cursor: default; opacity: 0.5;}
+.task2__label, .task3__label, .task4__label {display: block; width:31%; max-height: 48%; ;margin: 1%; opacity: 0.5;
+                overflow: hidden; border: 3px solid #ccc; border-radius: 10px}
+
+
+
 
 
 .task1          {width: 100%; height: 100%; overflow: hidden; background: #fff; position: absolute; left: 0; top: 0;}
@@ -36,18 +41,17 @@ input[type="radio"]{display: none}
 .task2          {width: 100%; height: 100%;display: flex; flex-wrap: wrap; align-items: center;justify-content: center;}
 #task2__radioBlock{height: 68%; margin-bottom: 2%; display: flex; flex-wrap: wrap; justify-content: center}
 .task2__word    {width: 100%; height: 7rem; margin: -3% 0 1% 0;}
-.task2__label   {display: block; max-height: 48%; max-width:31%;margin: 1%; opacity: 0.5; border: 2px solid #e55842; overflow: hidden; border-radius: 10px}
 .task2__label img  {width: 100%; height: auto; max-height: 100%;}
 
 
 
 #task3__radioBlock {height: 68%; margin-bottom: 2%; display: flex; flex-wrap: wrap; justify-content: center}
 .task3__img, .task4__img     {height: 40%}
-.task3__label, .task4__label   {font-size: 3rem; line-height: 4rem; border: 3px solid   #e55842; width: 30%; opacity: 0.5; height: 17%; margin: 1%; border-radius: 10px;}
+.task3__label, .task4__label   {font-size: 3rem; line-height: 4rem; height: 17%; padding: 5px 10px 5px 10px}
 
 
-#task4__userWord   {width: 100%; height: 10rem; border: none; outline: none; font-size: 7rem; line-height: 8rem; text-align: center}
-.task4__label    {opacity: 1; min-width: 40px}
+#task4__userWord    {width: 100%; height: 10rem; border: none; outline: none; font-size: 7rem; line-height: 8rem; text-align: center}
+.task4__label       {opacity: 1; min-width: 40px}
 .task4__letters     {display: flex; flex-wrap: nowrap; justify-content: center}
 
 

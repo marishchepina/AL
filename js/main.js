@@ -97,6 +97,8 @@ STEP2.onclick = function () {
 STEP3.onclick = function () {
     removeClassBtnActiv;
     STEP3.classList.add('btn--active');
+    stopAnimate();
+    hideMessage();
     wordsForRadioButton(wordList, wordsRadio);
     turnArr(radioTurn);
     turnArr(wordTurn);
@@ -108,11 +110,13 @@ STEP3.onclick = function () {
 STEP4.onclick = function () {
     removeClassBtnActiv;
     STEP4.classList.add('btn--active');
+    stopAnimate();
+    hideMessage();
     wordsForRadioButton(wordList, wordsRadio);
     turnArr(wordTurn);
     renderLetters(wordList[wordTurn[wordTurnIndex]]);
     renderWordTask4(wordList[wordTurn[wordTurnIndex]]);
-    verifyBut.onclick = verifyTask4;
+    //verifyBut.onclick = verifyTask4;
     document.getElementById('nav-toggle').checked=false;
 }
 

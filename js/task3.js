@@ -1,4 +1,3 @@
-
 let renderWordTask3 = function (word) {
     if (container.children.length > 0) {
     }
@@ -52,30 +51,22 @@ let radioButRenderTask3 = function (arr) {
 
 let verifyTask3 = function () {
     if (userChoise !== undefined) {
-        if (userChoise == wordTurn[wordTurnIndex]) {
-            MESSAGE.classList.add('top');
-            MESSAGE.innerText = `Правильно!!!`;
+        if (userChoise == wordTurn[wordTurnIndex] && (wordTurnIndex !== (wordList.length-1))) {
+            messageSucces();
+            cleanContainer();
             wordTurnIndex++;
-            if (wordTurnIndex == wordList.length) {
-                MESSAGE.classList.add('top');
-                MESSAGE.innerText = `${MESSAGE.innerText} Завдання виконано!`;
-
-            }
-            while (container.firstChild) {
-                container.removeChild(container.firstChild);
-            }
             renderWordTask3(wordList[wordTurn[wordTurnIndex]]);
             userChoise = undefined;
         }
-        else {
-            MESSAGE.classList.add('top');
-            MESSAGE.innerText = `Направильно. Вибрано  ${userChoise} radiobutton`;
+        else if (userChoise == wordTurn[wordTurnIndex] && (wordTurnIndex == (wordList.length-1))) {
+            messageFinish();
+            cleanContainer();
+            userChoise = undefined;
+            wordTurnIndex = 0;
         }
+        else {messageCry();}
 
     }
-    else {
-        MESSAGE.classList.add('top');
-        MESSAGE.innerText = `Виберіть слово.`;
-    }
+    else {messageButtonNotPressed();}
 }
 

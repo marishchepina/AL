@@ -35,7 +35,6 @@ let renderLetters = function (word) {
     letters = word.word;
     letters = letters.split('');
     letters = random(letters);
-    console.log(letters);
 }
 
 let radioButRenderTask4 = function (arr) {
@@ -73,7 +72,48 @@ let userWordMaking = function () {
     }
 }
 
+let verifyTask4 = function () {
+    //wordTurnIndex = 1;
+    console.log(wordList[wordTurn[wordTurnIndex]].word);
+    console.log(userWordArray);
+    userWordArray = userWordArray.join('');
+    if (userChoise !== undefined) {
+        if (userWordArray == wordList[wordTurn[wordTurnIndex]].word && (wordTurnIndex !== (wordList.length-1))) {
+            messageSucces();
+            task4__userWordText = ``;
+            task4__userWord.setAttribute("value", `${task4__userWordText}`);
+            cleanContainer();
+            userWordArray = [];
+            wordTurnIndex++;
+            renderLetters(wordList[wordTurn[wordTurnIndex]]);
+            renderWordTask4(wordList[wordTurn[wordTurnIndex]]);
+            userChoise = undefined;
+        }
+        else if (userWordArray == wordList[wordTurn[wordTurnIndex]].word && (wordTurnIndex == (wordList.length-1))) {
+            messageFinish();
+            cleanContainer();
+            userChoise = undefined;
+            wordTurnIndex = 0;
+            userWordArray = [];
+            task4__userWordText = ``;
+        }
+        else {
+            messageCry();
+            userWordArray = [];
+            task4__userWordText = ``;
+            task4__userWord.setAttribute("value", `${task4__userWordText}`);}
 
+
+    }
+    else {messageButtonNotPressed();}
+    let elements = document.getElementsByClassName("disabled");
+    clicked.checked=false;
+    while(elements.length>0){
+        elements[0].classList.remove("disabled");
+    }
+
+}
+/*
 let verifyTask4 = function () {
     userWordArray = userWordArray.join('');
     if (userWordArray == wordList[wordTurn[wordTurnIndex]].word) {
@@ -115,3 +155,4 @@ let verifyTask4 = function () {
     }
 
 }
+*/
