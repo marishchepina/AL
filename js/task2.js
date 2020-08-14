@@ -31,7 +31,9 @@ let renderWordTask2 = function (word) {
         task2.appendChild(task2__radioBlock);
         radioButRenderTask2(radioTurn);
         task2.appendChild(verifyBut);
-        audio.play();
+        setTimeout(function(){
+            audio.play();
+        }, 4500);
     }
 }
 

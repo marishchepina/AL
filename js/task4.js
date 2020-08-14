@@ -26,7 +26,9 @@ let renderWordTask4 = function (word) {
         task4.appendChild(task4__userWord);
         task4.appendChild(task4__letters);
         radioButRenderTask4(letters);
-        audio.play();
+        setTimeout(function(){
+            audio.play();
+        }, 4500);
         task4.appendChild(verifyBut);
     }
 }
@@ -73,7 +75,6 @@ let userWordMaking = function () {
 }
 
 let verifyTask4 = function () {
-    //wordTurnIndex = 1;
     console.log(wordList[wordTurn[wordTurnIndex]].word);
     console.log(userWordArray);
     userWordArray = userWordArray.join('');

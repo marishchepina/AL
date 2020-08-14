@@ -116,7 +116,6 @@ STEP4.onclick = function () {
     turnArr(wordTurn);
     renderLetters(wordList[wordTurn[wordTurnIndex]]);
     renderWordTask4(wordList[wordTurn[wordTurnIndex]]);
-    //verifyBut.onclick = verifyTask4;
     document.getElementById('nav-toggle').checked=false;
 }
 

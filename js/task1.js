@@ -8,7 +8,7 @@ let renderWord = function (word) {
         let audio = document.createElement('audio');
 
         task1.id = word[i].id;
-        task1.className = 'task1';
+        task1.className = 'task1 circle';
         task1__word.innerText = word[i].word;
         task1__word__translation.innerText = word[i].translate;
         task1__img.src = word[i].img;
