@@ -17,6 +17,16 @@ let letters = [];
 let userWordArray = [];
 
 
+document.addEventListener('DOMContentLoaded', function(event) {
+    let MESSAGE__button = document.createElement('button');
+    MESSAGE.classList.add('top');
+    MESSAGE.style.backgroundImage = "url('img/emotion/music.gif')";
+    MESSAGE__button.className = 'btn message__btn';
+    MESSAGE__button.innerText = "Вибрати слова";
+    MESSAGE.appendChild(MESSAGE__button);
+});
+
+
 function random(arr) {
     var j, temp;
     for (var i = arr.length - 1; i > 0; i--) {
@@ -52,7 +62,6 @@ let turnArr = function (arr) {
         }
         random(arr);
         return arr;
-
     }
     else {
         random(arr);
@@ -74,16 +83,18 @@ let removeClassBtnActiv = function () {
     }
 }
 
+
 STEP1.onclick = function () {
-    removeClassBtnActiv;
+    removeClassBtnActiv();
     STEP1.classList.add('btn--active');
+    hideMessage();
     renderWord(wordList);
     animate(wordList);
     document.getElementById('nav-toggle').checked=false;
 }
 
 STEP2.onclick = function () {
-    removeClassBtnActiv;
+    removeClassBtnActiv();
     STEP2.classList.add('btn--active');
     stopAnimate();
     hideMessage();
@@ -95,7 +106,7 @@ STEP2.onclick = function () {
 }
 
 STEP3.onclick = function () {
-    removeClassBtnActiv;
+    removeClassBtnActiv();
     STEP3.classList.add('btn--active');
     stopAnimate();
     hideMessage();
@@ -108,7 +119,7 @@ STEP3.onclick = function () {
 }
 
 STEP4.onclick = function () {
-    removeClassBtnActiv;
+    removeClassBtnActiv();
     STEP4.classList.add('btn--active');
     stopAnimate();
     hideMessage();
@@ -134,7 +145,7 @@ let hideMessage = function(){
 }
 
 let messageSucces = function(){
-    MESSAGE.classList.add('top');
+    MESSAGE.className = 'top circle';
     MESSAGE.style.backgroundImage = "url('img/emotion/glad.gif')";
     setTimeout(function(){
         MESSAGE.classList.remove("top");
@@ -142,7 +153,7 @@ let messageSucces = function(){
 }
 
 let messageFinish = function(){
-    MESSAGE.classList.add('top');
+    MESSAGE.className = 'top circle';
     let MESSAGE__text = document.createElement('div');
     MESSAGE.style.backgroundImage = "url('img/emotion/box.gif')";
     MESSAGE__text.innerText = "Завдання завершено!";
@@ -150,7 +161,7 @@ let messageFinish = function(){
 }
 
 let messageCry = function(){
-    MESSAGE.classList.add('top');
+    MESSAGE.className = 'top circle';
     MESSAGE.style.backgroundImage = "url('img/emotion/cry.gif')";
     setTimeout(function(){
         MESSAGE.classList.remove("top");
@@ -158,7 +169,7 @@ let messageCry = function(){
 }
 
 let messageButtonNotPressed = function(){
-    MESSAGE.classList.add('top');
+    MESSAGE.className = 'top circle';
     MESSAGE.style.backgroundImage = "url('img/emotion/lazy.gif')";
     setTimeout(function(){
         MESSAGE.classList.remove("top");
