@@ -1,4 +1,4 @@
-
+let homePage = document.getElementById("btn--home");
 const STEP1 = document.getElementById("btn--task1");
 const STEP2 = document.getElementById("btn--task2");
 const STEP3 = document.getElementById("btn--task3");
@@ -9,6 +9,7 @@ const MESSAGE = document.getElementById("message");
 let wordlist1 = document.getElementById("btn--wordlist1");
 let wordlist2 = document.getElementById("btn--wordlist2");
 let taskButBlock =  document.getElementById("taskButBlock");
+let wordlistButBlock =  document.getElementById("wordlistButBlock");
 let index = 0;
 let cycleCounter = 0;
 let userChoise;
@@ -25,8 +26,6 @@ let userWordArray = [];
 document.addEventListener('DOMContentLoaded', function(event) {
     MESSAGE.classList.add('top');
     MESSAGE.style.backgroundImage = "url('img/emotion/music.gif')";
-   // MESSAGE__button.className = 'btn btn--message';
-   // MESSAGE__button.innerText = "Вибрати слова";
 
 });
 
@@ -87,20 +86,29 @@ let removeClassBtnActiv = function () {
     }
 }
 
+homePage.onclick = function () {
+    taskButBlock.classList.add('hide');
+    wordlistButBlock.classList.remove('hide');
+    MESSAGE.classList.add('top');
+    MESSAGE.style.backgroundImage = "url('img/emotion/music.gif')";
+};
+
 
 wordlist1.onclick = function () {
     wordList = wordList1;
     taskButBlock.classList.remove('hide');
+    wordlistButBlock.classList.add('hide');
     document.getElementById('wordlist-toggle').checked=false;
-    document.getElementById('nav-toggle').checked=false;
+    document.getElementById('nav-toggle').checked=true;
 };
 
 
 wordlist2.onclick = function () {
     wordList = wordList2;
     taskButBlock.classList.remove('hide');
+    wordlistButBlock.classList.add('hide');
     document.getElementById('wordlist-toggle').checked=false;
-    document.getElementById('nav-toggle').checked=false;
+    document.getElementById('nav-toggle').checked=true;
 };
 
 STEP1.onclick = function () {
