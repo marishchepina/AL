@@ -8,10 +8,22 @@
     <link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 <body>
-<input type="checkbox" id="nav-toggle" hidden>
+<input type="checkbox" id="wordlist-toggle" hidden>
 <nav class="nav">
+    <label for="wordlist-toggle" class="wordlist-toggle" onclick></label>
+    <ul class="buttonBlock">
+        <li><button id="btn--wordlist1" class="btn">Cлова 1</button></li>
+        <li><button id="btn--wordlist2" class="btn">Cлова 2</button></li>
+        <li><button id="btn--wordlist3" class="btn">Cлова 3</button></li>
+        <li><button id="btn--wordlist4" class="btn">Cлова 4</button></li>
+    </ul>
+</nav>
+
+<input type="checkbox" id="nav-toggle" hidden>
+<nav id="taskButBlock" class="nav hide">
     <label for="nav-toggle" class="nav-toggle" onclick></label>
     <ul class="buttonBlock">
+        <li><button class="btn">Головна</button></li>
         <li><button id="btn--task1" class="btn">Переглянути слова</button></li>
         <li><button id="btn--task2" class="btn">Завдання 1</button></li>
         <li><button id="btn--task3" class="btn">Завдання 2</button></li>

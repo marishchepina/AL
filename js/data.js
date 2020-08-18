@@ -1,4 +1,4 @@
-const wordList = [
+const wordList1 = [
     {
         'id': 'one',
         'word': 'one',
@@ -34,5 +34,44 @@ const wordList = [
         'word': 'six',
         'translate': 'шість',
         'img': 'img/6.jpg'
+    },
+];
+
+const wordList2 = [
+    {
+        'id': 'red',
+        'word': 'red',
+        'translate': 'червоний',
+        'img': 'img/1.jpg'
+    },
+    {
+        'id': 'red',
+        'word': 'red',
+        'translate': 'червоний',
+        'img': 'img/1.jpg'
+    },
+    {
+        'id': 'red',
+        'word': 'red',
+        'translate': 'червоний',
+        'img': 'img/1.jpg'
+    },
+    {
+        'id': 'red',
+        'word': 'red',
+        'translate': 'червоний',
+        'img': 'img/1.jpg'
+    },
+    {
+        'id': 'red',
+        'word': 'red',
+        'translate': 'червоний',
+        'img': 'img/1.jpg'
+    },
+    {
+        'id': 'red',
+        'word': 'red',
+        'translate': 'червоний',
+        'img': 'img/1.jpg'
     },
 ];
