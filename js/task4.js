@@ -10,7 +10,8 @@ let renderWordTask4 = function (word) {
         let task4__letters = document.createElement('div');
         task4.id = 'task4';
         task4__img.src = word.img;
-        audio.src = `audio\\${getDigit(word.id)}.mp3`;
+        task4__img.className = "task4__img";
+        audio.src = `audio\\${audioFolder}\\${getDigit(word.id)}.mp3`;
         audio.className = `audio`;
         task4__userWord.setAttribute("id", `task4__userWord`);
         task4__userWord.setAttribute("placeholder", `слово`);

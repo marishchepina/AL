@@ -9,6 +9,7 @@ let renderWordTask3 = function (word) {
         let verifyBut = document.createElement('button');
         task3.id = 'task3';
         task3__img.src = word.img;
+        task3__img.className = "task3__img";
         //audio.src = `audio\\${getDigit(word.id)}.mp3`;
         //audio.className = `audio`;
         task3__radioBlock.id = `task3__radioBlock`

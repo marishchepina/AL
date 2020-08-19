@@ -10,6 +10,7 @@ let wordlist1 = document.getElementById("btn--wordlist1");
 let wordlist2 = document.getElementById("btn--wordlist2");
 let taskButBlock =  document.getElementById("taskButBlock");
 let wordlistButBlock =  document.getElementById("wordlistButBlock");
+let audioFolder = "";
 let index = 0;
 let cycleCounter = 0;
 let userChoise;
@@ -21,6 +22,7 @@ let wordTurnIndex = 0;
 let task4__userWordText = ``;
 let letters = [];
 let userWordArray = [];
+
 
 
 document.addEventListener('DOMContentLoaded', function(event) {
@@ -98,6 +100,7 @@ wordlist1.onclick = function () {
     wordList = wordList1;
     taskButBlock.classList.remove('hide');
     wordlistButBlock.classList.add('hide');
+    audioFolder = "numb";
     document.getElementById('wordlist-toggle').checked=false;
     document.getElementById('nav-toggle').checked=true;
 };
@@ -107,6 +110,7 @@ wordlist2.onclick = function () {
     wordList = wordList2;
     taskButBlock.classList.remove('hide');
     wordlistButBlock.classList.add('hide');
+    audioFolder = "vegetables";
     document.getElementById('wordlist-toggle').checked=false;
     document.getElementById('nav-toggle').checked=true;
 };
@@ -172,8 +176,11 @@ let hideMessage = function(){
 }
 
 let messageSucces = function(){
+    let audio = document.createElement('audio');
     MESSAGE.className = 'top circle';
     MESSAGE.style.backgroundImage = "url('img/emotion/glad.gif')";
+    audio.src = `audio\\MESSAGE\\tada.mp3`;
+    audio.play();
     setTimeout(function(){
         MESSAGE.classList.remove("top");
     }, 4000);
@@ -188,16 +195,24 @@ let messageFinish = function(){
 }
 
 let messageCry = function(){
+    let audio = document.createElement('audio');
     MESSAGE.className = 'top circle';
     MESSAGE.style.backgroundImage = "url('img/emotion/cry.gif')";
+    audio.src = `audio\\MESSAGE\\cry.mp3`;
+    MESSAGE.appendChild(audio);
+    audio.play();
     setTimeout(function(){
         MESSAGE.classList.remove("top");
     }, 4000);
 }
 
 let messageButtonNotPressed = function(){
+    let audio = document.createElement('audio');
     MESSAGE.className = 'top circle';
     MESSAGE.style.backgroundImage = "url('img/emotion/lazy.gif')";
+    audio.src = `audio\\MESSAGE\\lazy.mp3`;
+    MESSAGE.appendChild(audio);
+    audio.play();
     setTimeout(function(){
         MESSAGE.classList.remove("top");
     }, 4000);

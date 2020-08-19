@@ -3,75 +3,75 @@ const wordList1 = [
         'id': 'one',
         'word': 'one',
         'translate': 'один',
-        'img': 'img/1.jpg'
+        'img': 'img/numb/1.jpg'
     },
     {
         'id': 'two',
         'word': 'two',
         'translate': 'два',
-        'img': 'img/2.jpg'
+        'img': 'img/numb/2.jpg'
     },
     {
         'id': 'three',
         'word': 'three',
         'translate': 'три',
-        'img': 'img/3.jpg'
+        'img': 'img/numb/3.jpg'
     },
     {
         'id': 'four',
         'word': 'four',
         'translate': 'чотири',
-        'img': 'img/4.jpg'
+        'img': 'img/numb/4.jpg'
     },
     {
         'id': 'five',
         'word': 'five',
         'translate': 'п\'ять',
-        'img': 'img/5.jpg'
+        'img': 'img/numb/5.jpg'
     },
     {
         'id': 'six',
         'word': 'six',
         'translate': 'шість',
-        'img': 'img/6.jpg'
+        'img': 'img/numb/6.jpg'
     },
 ];
 
 const wordList2 = [
     {
-        'id': 'red',
-        'word': 'red',
-        'translate': 'червоний',
-        'img': 'img/1.jpg'
+        'id': 'carrot',
+        'word': 'carrot',
+        'translate': 'морква',
+        'img': 'img/vegetables/1.jpg'
     },
     {
-        'id': 'red',
-        'word': 'red',
-        'translate': 'червоний',
-        'img': 'img/1.jpg'
+        'id': 'cucumber',
+        'word': 'cucumber',
+        'translate': 'огірок',
+        'img': 'img/vegetables/2.jpg'
     },
     {
-        'id': 'red',
-        'word': 'red',
-        'translate': 'червоний',
-        'img': 'img/1.jpg'
+        'id': 'lettuce',
+        'word': 'lettuce',
+        'translate': 'cалат',
+        'img': 'img/vegetables/3.jpg'
     },
     {
-        'id': 'red',
-        'word': 'red',
-        'translate': 'червоний',
-        'img': 'img/1.jpg'
+        'id': 'onion',
+        'word': 'onion',
+        'translate': 'цибуля',
+        'img': 'img/vegetables/onion.jpg'
     },
     {
-        'id': 'red',
-        'word': 'red',
-        'translate': 'червоний',
-        'img': 'img/1.jpg'
+        'id': 'potatoes',
+        'word': 'potatoes',
+        'translate': 'картопля',
+        'img': 'img/vegetables/potatoes.jpg'
     },
     {
-        'id': 'red',
-        'word': 'red',
-        'translate': 'червоний',
-        'img': 'img/1.jpg'
+        'id': 'tomato',
+        'word': 'tomato',
+        'translate': 'помідор',
+        'img': 'img/vegetables/tomato.jpg'
     },
 ];
