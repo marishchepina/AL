@@ -98,6 +98,7 @@ homePage.onclick = function () {
 
 wordlist1.onclick = function () {
     wordList = wordList1;
+    wordsRadio =[];
     taskButBlock.classList.remove('hide');
     wordlistButBlock.classList.add('hide');
     audioFolder = "numb";
@@ -108,6 +109,7 @@ wordlist1.onclick = function () {
 
 wordlist2.onclick = function () {
     wordList = wordList2;
+    wordsRadio = [];
     taskButBlock.classList.remove('hide');
     wordlistButBlock.classList.add('hide');
     audioFolder = "vegetables";
