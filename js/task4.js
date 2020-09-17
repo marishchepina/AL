@@ -14,7 +14,7 @@ let renderWordTask4 = function (word) {
         audio.src = `audio\\${audioFolder}\\${getDigit(word.id)}.mp3`;
         audio.className = `audio`;
         task4__userWord.setAttribute("id", `task4__userWord`);
-        task4__userWord.setAttribute("placeholder", `слово`);
+        task4__userWord.setAttribute("placeholder", `${word.translate}`);
         task4__letters.setAttribute("id", `task4__letters`);
         verifyBut.className = `btn btn--verify`;
         verifyBut.id = `verifyBtn`;

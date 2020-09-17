@@ -56,7 +56,7 @@ let intervalVar;
 let animate = function(){showWord(wordList);
     intervalVar = setInterval(function () {
         showWord(wordList);
-    }, 4000);
+    }, 10000);
 }
 
 

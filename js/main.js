@@ -6,8 +6,10 @@ const STEP4 = document.getElementById("btn--task4");
 let container = document.getElementById("container");
 let wordList;
 const MESSAGE = document.getElementById("message");
-let wordlist1 = document.getElementById("btn--wordlist1");
-let wordlist2 = document.getElementById("btn--wordlist2");
+let wordlist1 = document.getElementById("btn--wordlist4-l1");
+let wordlist2 = document.getElementById("btn--wordlist4-l2");
+let wordlist3 = document.getElementById("btn--wordlist4-l3");
+let wordlist5 = document.getElementById("btn--wordlist4-l5");
 let taskButBlock =  document.getElementById("taskButBlock");
 let wordlistButBlock =  document.getElementById("wordlistButBlock");
 let audioFolder = "";
@@ -96,12 +98,13 @@ homePage.onclick = function () {
 };
 
 
-wordlist1.onclick = function () {
+  wordlist1.onclick  = function () {
     wordList = wordList1;
     wordsRadio =[];
+    imgsRadio = [];
     taskButBlock.classList.remove('hide');
     wordlistButBlock.classList.add('hide');
-    audioFolder = "numb";
+    audioFolder = "4-l1";
     document.getElementById('wordlist-toggle').checked=false;
     document.getElementById('nav-toggle').checked=true;
 };
@@ -110,9 +113,32 @@ wordlist1.onclick = function () {
 wordlist2.onclick = function () {
     wordList = wordList2;
     wordsRadio = [];
+    imgsRadio = [];
     taskButBlock.classList.remove('hide');
     wordlistButBlock.classList.add('hide');
-    audioFolder = "vegetables";
+    audioFolder = "4-l2";
+    document.getElementById('wordlist-toggle').checked=false;
+    document.getElementById('nav-toggle').checked=true;
+};
+
+wordlist3.onclick = function () {
+    wordList = wordList2;
+    wordsRadio = [];
+    imgsRadio = [];
+    taskButBlock.classList.remove('hide');
+    wordlistButBlock.classList.add('hide');
+    audioFolder = "4-l3";
+    document.getElementById('wordlist-toggle').checked=false;
+    document.getElementById('nav-toggle').checked=true;
+};
+
+wordlist5.onclick = function () {
+    wordList = wordList5;
+    wordsRadio = [];
+    imgsRadio = [];
+    taskButBlock.classList.remove('hide');
+    wordlistButBlock.classList.add('hide');
+    audioFolder = "4-l5";
     document.getElementById('wordlist-toggle').checked=false;
     document.getElementById('nav-toggle').checked=true;
 };

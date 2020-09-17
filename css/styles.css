@@ -1,6 +1,6 @@
 *, *::after, *::before {margin: 0; padding: 0;box-sizing: inherit; outline: 0;}
 
-html, body, #container  {width: 100%; height: 100%; min-height: 100%;}
+html, body   {width: 100%; min-height: 100%; height: 100%}
 html        {font-size: 62.5%;}
 body        {background: #fff; box-sizing: border-box;font: 2rem/2.4rem 'Open Sans', sans-serif;color:#000;}
 img         {display: block; width: 100%; height: auto; margin:  0 auto;}
@@ -11,7 +11,7 @@ input[type="radio"]{display: none}
 .hide       {display: none}
 
 
-#container      {margin: 0 auto; padding: 80px 5% 5%;text-align: center; position: relative; max-width: 800px; flex-wrap: wrap; font-size: 7rem; line-height: 8rem;
+#container      {margin: 0 auto; width: 100%; height: auto; min-height: 100%; padding: 80px 5% 10px 5%;text-align: center; position: relative; max-width: 800px; flex-wrap: wrap; font-size: 6rem; line-height: 8rem;
                 overflow-x: hidden}
 .buttonBlock    {position: absolute; z-index: 100; right: 0; top: 50%; transform: translateY(-50%); padding-right: 3rem }
 .buttonBlock .btn     {width: 100%}
@@ -26,7 +26,7 @@ input[type="radio"]{display: none}
 #message img    {max-width: 100%; height: auto; }
 .btn--verify    {width: 90%; height: 5rem; margin: 1.5rem auto 1.5rem auto}
 #container  #task4 .disabled       {display: none; cursor: default; opacity: 0.5;}
-.task2__label, .task3__label, .task4__label {display: flex; align-items: center; width:31%; max-height: 48%; ;margin: 1%; opacity: 0.6;
+.task2__label, .task3__label, .task4__label {display: flex;  position: relative; align-items: center; width:31%; max-height: 48%; ;margin: 1%; opacity: 0.6;
                 overflow: hidden; border: 3px solid #ccc; border-radius: 10px}
 .task2__label:hover, .task3__label:hover, .task4__label:hover   { transition: .5s; -webkit-transform: scale(1.08);
                 -ms-ransform: scale(1.08); transform: scale(1.08);}
@@ -35,9 +35,9 @@ input[type="radio"]{display: none}
 
 
 .task1          {width: 100%; height: 100%; overflow: hidden; background: #fff; position: absolute; left: 0; top: 0;}
-.task1__img     {position: absolute; max-height: 60%; display: flex; width: 100%; top: 25rem;}
+.task1__img     {position: absolute; display: flex; width: 100%; top: 21rem;}
 .task1__img img {width: 100%; height: auto}
-.task1__word    {position: absolute; left: 0; top: 10rem; width: 100%; font-weight: bold; text-align: center;}
+.task1__word    {position: absolute; left: 0; top: 8rem; width: 100%; font-weight: bold; text-align: center;}
 .task1__word__translation   {position: absolute; left: 0; top: 5.5rem; width: 100%; font-size: 3.5rem; font-weight: normal;}
 
 
@@ -45,13 +45,13 @@ input[type="radio"]{display: none}
 .task2          {width: 100%; height: 100%;display: flex; flex-wrap: wrap; align-items: center;justify-content: center;}
 #task2__radioBlock{height: 68%; margin-bottom: 2%; display: flex; flex-wrap: wrap; justify-content: center}
 .task2__word    {width: 100%; height: 7rem; margin: 0 0 1% 0;}
-.task2__label img  {width: 100%; height: auto; /*max-height: 100%;*/ transition: height 0.8s, opacity 1s ease;}
+.task2__label img  {/* object-fit: cover;  height: 100%;*/width: 100%; transition: height 0.8s, opacity 1s ease;}
 
 
 
 #task3__radioBlock {height: 68%; margin-bottom: 2%; display: flex; flex-wrap: wrap; justify-content: center}
-.task3__img, .task4__img     {height: 260px; width: auto}
-.task3__label, .task4__label   {font-size: 3rem; line-height: 4rem; height: 17%;min-width: 31%; width: auto; padding: 5px 10px 5px 10px}
+.task3__img, .task4__img     {height: 260px; max-width: 100%; width: auto}
+.task3__label, .task4__label   {font-size: 3rem; line-height: 4rem; height: 56px;min-width: 31%; width: auto; padding: 5px 10px 5px 10px}
 
 
 #task4__userWord    {width: 100%; height: 10rem; border: none; outline: none; font-size: 7rem; line-height: 8rem; text-align: center}
@@ -77,7 +77,7 @@ input[type="radio"]{display: none}
     -webkit-transition: color .25s ease-in-out; -moz-transition: color .25s ease-in-out;
     transition: color .25s ease-in-out;}
 .nav-toggle:after {content: '\2630'; text-decoration: none;}
-.wordlist-toggle    {width: 90%; margin: 0 auto; border: 1px solid #fff; text-align: center; border-radius: 5px;}
+.wordlist-toggle    {width: 280px; margin-left: -140px; left: -50%; border: 1px solid #fff; text-align: center; border-radius: 5px;}
 .wordlist-toggle:after {content: 'Вибрати слова'; text-decoration: none;}
 [id='nav-toggle'], [id='wordlist-toggle'] {position: absolute; display: none;}
 [id='nav-toggle']:checked ~ .nav > .nav-toggle, [id='wordlist-toggle']:checked ~ .nav > .wordlist-toggle
@@ -120,25 +120,15 @@ body { -webkit-animation: bugfix infinite 1s;}
                             transition: width 0.5s ease;}
 .buttonBlock .btn            {position: static; margin: 0;  background: none; font-size: 3.5rem }
 /*--------------------------------    Animation   ----------------------------------------*/
-.circle {-webkit-animation: open 4s infinite; animation: open 4s infinite;}
+.circle {-webkit-animation: open 10s infinite; animation: open 10s infinite;}
 @-webkit-keyframes open {
     0%      {border-radius: 100%; -webkit-transform: scale(0.5, 0.5); transform: scale(0.5, 0.5)}
-    30%     {border-radius: 0; -webkit-transform: scale(1.0, 1.0); transform: scale(1.0, 1.0);}
+    10%     {border-radius: 0; -webkit-transform: scale(1.0, 1.0); transform: scale(1.0, 1.0);}
     100%    {-webkit-transform: scale(1.0, 1.0); transform: scale(1.0, 1.0);}}
 @keyframes open {
     0%      {border-radius: 100%; -webkit-transform: scale(0.5, 0.5); transform: scale(0.5, 0.5)}
-    30%     {border-radius: 0; -webkit-transform: scale(1.0, 1.0); transform: scale(1.0, 1.0);}
+    10%     {border-radius: 0; -webkit-transform: scale(1.0, 1.0); transform: scale(1.0, 1.0);}
     100%    {-webkit-transform: scale(1.0, 1.0); transform: scale(1.0, 1.0);}}
 
-/*@media all and (orientation:portrait) {
-    .task1__word    {top: 2rem;}
-    .task1__img     {top: auto; bottom: 5%}
-}*/
-
-/*
-@media all and (orientation:landscape), all and (max-width: 800px) {
-    .task1__word    {top: 2rem;}
-    .task1__img     {top: auto; bottom: 5%}
-
-}
-*/
+@media  all and (min-width: 600px) {
+    .task1__img img{height: 100%; width: auto; max-height: 400px}}
