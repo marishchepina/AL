@@ -50,7 +50,7 @@ let wordListUserChoise = function (arg) {
     wordsRadio = [];
     imgsRadio = [];
 
-
+    wordList= AllWordLists[UserChoiseNum];
     taskButBlock.classList.remove('hide');
     wordlistButBlock.classList.add('hide');
     audioFolder = `4-l${UserChoiseNum}`;
