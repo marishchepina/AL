@@ -1,6 +1,8 @@
 let imgsForRadioButton = function (word, arr) {
     for (let i = 0; i < wordList.length; i++) {
         arr.push(word[i].img);
+        console.log(wordList[i]);
+        console.log(wordList.length);
 
     }
 }
@@ -13,29 +15,21 @@ let renderWordTask2 = function (word) {
         let task2 = document.createElement('div');
         let task2__word = document.createElement('div');
         let task2__radioBlock = document.createElement('div');
-        //let audio = document.createElement('audio');
         let verifyBut = document.createElement('button');
         task2.id = 'task2';
         task2__radioBlock.id = 'task2__radioBlock';
         task2.className = 'task2';
         task2__word.className = 'task2__word';
         task2__word.innerText = word.word;
-        //audio.src = `audio\\${audioFolder}\\${i + 1}.mp3`;
-        //audio.className = `audio`;
         verifyBut.className = `btn btn--verify`;
         verifyBut.id = `verifyBtn`;
         verifyBut.innerText = `Перевірити`;
         verifyBut.onclick = verifyTask2;
         container.appendChild(task2);
         task2.appendChild(task2__word);
-        //task2.appendChild(audio);
         task2.appendChild(task2__radioBlock);
         radioButRenderTask2(radioTurn);
         task2.appendChild(verifyBut);
-        //setTimeout(function(){
-        //    audio.play();
-       // }, 4500);
-        //i++;
     }
 }
 

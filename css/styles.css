@@ -17,7 +17,6 @@ input[type="radio"]{display: none}
 .buttonBlock .btn     {width: 100%}
 .btn            {cursor: pointer; border: 1px solid #fff; padding: 1rem; margin: 1rem; font-size: 2.5rem; background: #e55842; color: #fff; text-align: center}
 .btn--message   {display: block; margin: 0 auto; width: 90%;}
-.btn:hover, .btn--active  {color: #fff; background: #16a085; -webkit-transition: background-color .5s ease; transition: background-color .5s ease;}
 .top            {display: block !important; z-index: 50 !important;}
 #message        {width: 100%; height: 100%; padding: 3%; color: #fff; display: none; z-index: -1; line-height: 4.2rem;
                  font-size: 4rem; position: fixed; right: 0; top: 0;

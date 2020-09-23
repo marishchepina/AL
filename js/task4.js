@@ -11,8 +11,6 @@ let renderWordTask4 = function (word) {
         task4.id = 'task4';
         task4__img.src = word.img;
         task4__img.className = "task4__img";
-        audio.src = `audio\\${audioFolder}\\${getDigit(word.id)}.mp3`;
-        audio.className = `audio`;
         task4__userWord.setAttribute("id", `task4__userWord`);
         task4__userWord.setAttribute("placeholder", `${word.translate}`);
         task4__letters.setAttribute("id", `task4__letters`);
@@ -23,13 +21,9 @@ let renderWordTask4 = function (word) {
         task4__letters.className = 'task4__letters';
         container.appendChild(task4);
         task4.appendChild(task4__img);
-        task4.appendChild(audio);
         task4.appendChild(task4__userWord);
         task4.appendChild(task4__letters);
         radioButRenderTask4(letters);
-        setTimeout(function(){
-            audio.play();
-        }, 4500);
         task4.appendChild(verifyBut);
     }
 }
@@ -115,46 +109,3 @@ let verifyTask4 = function () {
     }
 
 }
-/*
-let verifyTask4 = function () {
-    userWordArray = userWordArray.join('');
-    if (userWordArray == wordList[wordTurn[wordTurnIndex]].word) {
-        MESSAGE.classList.add('top');
-        MESSAGE.innerText = `Правильно!!!`;
-        task4__userWordText = ``;
-        task4__userWord.setAttribute("value", `${task4__userWordText}`);
-        wordTurnIndex++;
-        if (wordTurnIndex == wordList.length){
-            MESSAGE.classList.add('top');
-            MESSAGE.innerText = `${MESSAGE.innerText} Завдання виконано!`;
-        }
-        while (container.firstChild) {
-            container.removeChild(container.firstChild);
-        }
-        renderLetters(wordList[wordTurn[wordTurnIndex]]);
-        renderWordTask4(wordList[wordTurn[wordTurnIndex]]);
-        userChoise = undefined;
-        userWordArray = [];
-    }
-    else if (userWordArray == []){
-        MESSAGE.classList.add('top');
-        MESSAGE.innerText = `Введіть слово.`;
-        task4__userWordText = ``;
-        task4__userWord.setAttribute("value", `${task4__userWordText}`);
-        userWordArray = [];
-    }
-    else {
-        MESSAGE.classList.add('top');
-        MESSAGE.innerText = `Помилка, спробуй ще раз.`;
-        userChoise = undefined;
-        userWordArray = [];
-        task4__userWordText = ``;
-        task4__userWord.setAttribute("value", `${task4__userWordText}`);
-    }
-    let elements = document.getElementsByClassName("disabled");
-       while(elements.length>0){
-        elements[0].classList.remove("disabled");
-    }
-
-}
-*/

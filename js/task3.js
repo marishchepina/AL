@@ -5,13 +5,10 @@ let renderWordTask3 = function (word) {
         let task3 = document.createElement('div');
         let task3__img = document.createElement('img');
         let task3__radioBlock = document.createElement('div');
-        //let audio = document.createElement('audio');
         let verifyBut = document.createElement('button');
         task3.id = 'task3';
         task3__img.src = word.img;
         task3__img.className = "task3__img";
-        //audio.src = `audio\\${getDigit(word.id)}.mp3`;
-        //audio.className = `audio`;
         task3__radioBlock.id = `task3__radioBlock`
         verifyBut.className = `btn`;
         verifyBut.id = `verifyBtn`;
@@ -21,10 +18,8 @@ let renderWordTask3 = function (word) {
         container.appendChild(task3);
         task3.appendChild(task3__img);
         task3.appendChild(task3__radioBlock);
-        //task3.appendChild(audio);
         radioButRenderTask3(radioTurn);
         task3.appendChild(verifyBut);
-        //audio.play();
     }
 }
 

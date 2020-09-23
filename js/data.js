@@ -1,4 +1,21 @@
-const wordList1 = [
+
+let getWordlistByName = function() {
+    
+}
+
+
+
+
+let AllWordLists =
+    {
+        '1': 'wordList1',
+        '2': 'wordList2',
+        '3': 'wordList3',
+        '5': 'wordList5',
+    };
+
+
+let wordList1 = [
     {
         'id': 'clever',
         'word': 'clever',
@@ -30,9 +47,7 @@ const wordList1 = [
         'img': 'img/4-l1/5-1.jpg'
     },
 ];
-
-
-const wordList2 = [
+let wordList2 = [
     {
         'id': 'laptop',
         'word': 'laptop',
@@ -70,9 +85,7 @@ const wordList2 = [
         'img': 'img/4-l2/7.jpg'
     }
 ];
-
-
-const wordList3 = [
+let wordList3 = [
     {
         'id': 'well',
         'word': 'well',
@@ -116,9 +129,7 @@ const wordList3 = [
         'img': 'img/4-l3/6-1.jpg'
     },
 ];
-
-
-const wordList5 = [
+let wordList5 = [
     {
         'id': 'storm',
         'word': 'storm',
@@ -151,6 +162,9 @@ const wordList5 = [
     },
 
 ];
+
+
+
 /*
  const wordList1 = [
  {
