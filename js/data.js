@@ -1,5 +1,43 @@
 let AllWordLists =
     {
+        0: [
+            {
+                'id': 'school',
+                'word': 'school',
+                'translate': 'школа',
+                'img': 'img/2-l1/1.jpg'
+            },
+            {
+                'id': 'bag',
+                'word': 'bag',
+                'translate': 'портфель',
+                'img': 'img/2-l1/2.jpg'
+            },
+            {
+                'id': 'pencil',
+                'word': 'pencil',
+                'translate': 'олівець',
+                'img': 'img/2-l1/3.jpg'
+            },
+            {
+                'id': 'pen',
+                'word': 'pen',
+                'translate': 'ручка',
+                'img': 'img/2-l1/4.jpg'
+            },
+            {
+                'id': 'rubber',
+                'word': 'rubber',
+                'translate': 'стирачка',
+                'img': 'img/2-l1/5.jpg'
+            },
+            {
+                'id': 'book',
+                'word': 'book',
+                'translate': 'книжка',
+                'img': 'img/2-l1/6.jpg'
+            },
+        ],
         1: [
             {
                 'id': 'clever',

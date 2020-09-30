@@ -7,11 +7,8 @@ let container = document.getElementById("container");
 var wordList;
 let lessonButList = document.getElementById("lessonButList");
 const MESSAGE = document.getElementById("message");
-//let wordlistUserChoise = document.getElementById(`wordList${key}`);
 let taskButBlock = document.getElementById("taskButBlock");
 let wordlistButBlock = document.getElementById("wordlistButBlock");
-//let wordListUserChoise = document.getElementsByClassName("wordListUserChoise");
-let wordlistUserChoiseArr = [];
 var audioFolder = "";
 let index = 0;
 let cycleCounter = 0;
@@ -32,13 +29,10 @@ document.addEventListener('DOMContentLoaded', function (event) {
     for (key in AllWordLists) {
         let li = document.createElement('li');
         li.innerText = `Урок ${key}`;
-        //li.className = `wordListUserChoise`;
         lessonButList.appendChild(li);
         li.onclick = wordListUserChoise;
         li.title  = key;
-
     }
-
 });
 
 
@@ -76,16 +70,12 @@ function random(arr) {
 
 
 let turnArr = function (arr) {
-    if (arr.length === 0) {
+    arr.length = 0;
         for (let i = 0; i < wordList.length; i++) {
             arr.push(i);
         }
         random(arr);
         return arr;
-    }
-    else {
-        random(arr);
-    }
 }
 
 
@@ -179,7 +169,7 @@ let messageSucces = function () {
 let messageFinish = function () {
     MESSAGE.className = 'top circle';
     let MESSAGE__text = document.createElement('div');
-    MESSAGE.tyle.backgroundImage = "url('img/emotion/box.gif')";
+    MESSAGE.style.backgroundImage = "url('img/emotion/box.gif')";
     MESSAGE__text.innerText = "Завдання завершено!";
     MESSAGE.appendChild(MESSAGE__text);
 }
