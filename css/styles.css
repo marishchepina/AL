@@ -12,30 +12,30 @@ input[type="radio"]{display: none}
 
 
 #container      {margin: 0 auto; width: 100%; height: auto; min-height: 100%; padding: 80px 5% 10px 5%;text-align: center; position: relative; max-width: 800px; flex-wrap: wrap; font-size: 6rem; line-height: 8rem;
-                overflow-x: hidden}
+    overflow-x: hidden}
 .buttonBlock    {position: absolute; z-index: 100; right: 0; top: 50%; transform: translateY(-50%); padding-right: 3rem }
 .buttonBlock .btn     {width: 100%}
 .btn            {cursor: pointer; border: 1px solid #fff; padding: 1rem; margin: 1rem; font-size: 2.5rem; background: #e55842; color: #fff; text-align: center}
 .btn--message   {display: block; margin: 0 auto; width: 90%;}
 .top            {display: block !important; z-index: 50 !important;}
 #message        {width: 100%; height: 100%; padding: 3%; color: #fff; display: none; z-index: -1; line-height: 4.2rem;
-                 font-size: 4rem; position: fixed; right: 0; top: 0;
-                 background: #e55842  url('../img/emotion/glad.gif') no-repeat 50% 50%; background-size: cover;}
+    font-size: 4rem; position: fixed; right: 0; top: 0;
+    background: #e55842  url('../img/emotion/glad.gif') no-repeat 50% 50%; background-size: cover;}
 #message div    {position: absolute; bottom: 2rem; width: 90%; left: 5%; text-align: center}
 #message img    {max-width: 100%; height: auto; }
 .btn--verify    {width: 90%; height: 5rem; margin: 1.5rem auto 1.5rem auto}
 #container  #task4 .disabled       {display: none; cursor: default; opacity: 0.5;}
 .task2__label, .task3__label, .task4__label {display: flex;  position: relative; align-items: center; width:31%; max-height: 48%; ;margin: 1%; opacity: 0.6;
-                overflow: hidden; border: 3px solid #ccc; border-radius: 10px}
+    overflow: hidden; border: 3px solid #ccc; border-radius: 10px}
 .task2__label:hover, .task3__label:hover, .task4__label:hover   { transition: .5s; -webkit-transform: scale(1.08);
-                -ms-ransform: scale(1.08); transform: scale(1.08);}
+    -ms-ransform: scale(1.08); transform: scale(1.08);}
 
 
 
 
 .task1          {width: 100%; height: 100%; overflow: hidden; background: #fff; position: absolute; left: 0; top: 0;}
 .task1__img     {position: absolute; display: flex; width: 100%; top: 21rem;}
-.task1__img img {width: 100%; height: auto}
+.task1__img img {display: block; width: 100%; height: auto}
 .task1__word    {position: absolute; left: 0; top: 8rem; width: 100%; font-weight: bold; text-align: center;}
 .task1__word__translation   {position: absolute; left: 0; top: 5.5rem; width: 100%; font-size: 3.5rem; font-weight: normal;}
 
@@ -49,8 +49,9 @@ input[type="radio"]{display: none}
 
 
 #task3__radioBlock {height: 68%; margin-bottom: 2%; display: flex; flex-wrap: wrap; justify-content: center}
-.task3__img, .task4__img     {height: 260px; max-width: 100%; width: auto}
+.task3__img, .task4__img     {/*height: 260px;*/ max-width: 100%; width: auto}
 .task3__label, .task4__label   {font-size: 3rem; line-height: 4rem; height: 56px;min-width: 31%; width: auto; padding: 5px 10px 5px 10px}
+.task3__label       {min-width: 0}
 
 
 #task4__userWord    {width: 100%; height: 10rem; border: none; outline: none; font-size: 7rem; line-height: 8rem; text-align: center}
@@ -58,7 +59,7 @@ input[type="radio"]{display: none}
 .task4__letters     {display: flex; flex-wrap: wrap; justify-content: center}
 
 
-    /*-------------------------------TASK 1------------------------------------------------*/
+/*-------------------------------TASK 1------------------------------------------------*/
 #container ul   {position: relative; width: 100%; height: 100%; }
 #container ul li{position: absolute; display: block; left: 0; top: 0; width: 100%; height: 100%; z-index: 1; background-color: ghostwhite;}
 #container ul li img{width: 100%; max-width: 400px}
@@ -72,20 +73,21 @@ input[type="radio"]{display: none}
 .nav {width: 100%; height: 100%; position: fixed; top: 0; bottom: 0; margin: 0; right: -100%;padding: 0 10%;z-index: 99;
     -webkit-transition: right 0.3s; -moz-transition: right 0.3s; transition: right 0.3s; background: #16a085;}
 .nav-toggle, .wordlist-toggle {position: absolute; right: 104%; top: 1em; padding: 0.5em; background: inherit; color: #fff;
-             cursor: pointer; font-size: 1.2em; line-height: 1; z-index:99;
+    cursor: pointer; font-size: 1.2em; line-height: 1; z-index:99;
     -webkit-transition: color .25s ease-in-out; -moz-transition: color .25s ease-in-out;
     transition: color .25s ease-in-out;}
 .nav-toggle:after {content: '\2630'; text-decoration: none;}
 .wordlist-toggle    {width: 280px; margin-left: -140px; left: -50%; border: 1px solid #fff; text-align: center; border-radius: 5px;}
-.wordlist-toggle:after {content: 'Вибрати слова'; text-decoration: none;}
+#class4       {top: 9.7rem}
+#class2:after {content: '2 клас'; text-decoration: none;}
+#class4:after {content: '4 клас'; text-decoration: none;}
 [id='nav-toggle'], [id='wordlist-toggle'] {position: absolute; display: none;}
-[id='nav-toggle']:checked ~ .nav > .nav-toggle, [id='wordlist-toggle']:checked ~ .nav > .wordlist-toggle
-{left: auto; right: 4%; top: 1.8rem; font-size: 2.8rem;}
-[id='nav-toggle']:checked ~ .nav, [id='wordlist-toggle']:checked ~ .nav {right: 0; box-shadow:-4px 0px 20px 0px rgba(0,0,0, 0.5);overflow-y: auto;
-    -moz-box-shadow:-4px 0px 20px 0px rgba(0,0,0, 0.5);  -webkit-box-shadow:-4px 0px 20px 0px rgba(0,0,0, 0.5);}
+[id='nav-toggle']:checked ~ .nav > .nav-toggle, [id='wordlist-toggle']:checked ~ .nav > .wordlist-toggle{display: none}
+/*{left: auto; right: 4%; top: 1.8rem; font-size: 2.8rem;}*/
+[id='nav-toggle']:checked ~ .nav, [id='wordlist-toggle']:checked ~ .nav {right: 0; box-shadow:-4px 0 20px 0 rgba(0,0,0, 0.5);overflow-y: auto;
+    -moz-box-shadow:-4px 0 20px 0 rgba(0,0,0, 0.5);  -webkit-box-shadow:-4px 0 20px 0 rgba(0,0,0, 0.5);}
 [id='nav-toggle']:checked ~ .nav > .nav-toggle:after {content: '\2715';}
 [id='wordlist-toggle']:checked ~ .nav > .wordlist-toggle:after {content: '⇒'; text-align: right; width: 60px}
-/** * профиксим баг в Android <= 4.1.2 * см: http://timpietrusky.com/advanced-checkbox-hack */
 body { -webkit-animation: bugfix infinite 1s;}
 @-webkit-keyframes bugfix {to {padding: 0;}}
 .nav > .buttonBlock {display: block; margin: 0; padding: 0; list-style: none; width: 100%}
@@ -97,27 +99,27 @@ body { -webkit-animation: bugfix infinite 1s;}
 [id='nav-toggle']:checked ~ .nav > ul > li, [id='wordlist-toggle']:checked ~ .nav > ul > li { opacity: 1; -webkit-transform: translateX(0);-moz-transform: translateX(0);
     -ms-transform: translateX(0); transform: translateX(0);}
 .nav > ul > li:nth-child(2) {-webkit-transition: opacity .5s .2s, -webkit-transform .5s .2s;
-                            transition: opacity .5s .2s, transform .5s .2s;}
+    transition: opacity .5s .2s, transform .5s .2s;}
 .nav > ul > li:nth-child(3) {-webkit-transition: opacity .5s .3s, -webkit-transform .5s .3s;
-                            transition: opacity .5s .3s, transform .5s .3s;}
+    transition: opacity .5s .3s, transform .5s .3s;}
 .nav > ul > li:nth-child(4) {-webkit-transition: opacity .5s .4s, -webkit-transform .5s .4s;
-                            transition: opacity .5s .4s, transform .5s .4s;}
+    transition: opacity .5s .4s, transform .5s .4s;}
 .nav > ul > li:nth-child(5) {-webkit-transition: opacity .5s .5s, -webkit-transform .5s .5s;
-                            transition: opacity .5s .5s, transform .5s .5s;}
+    transition: opacity .5s .5s, transform .5s .5s;}
 .nav > ul > li              {cursor: pointer; display: inline-block; position: relative; padding: 0; color: #dadada;
-                            width: 100%; -webkit-transition: color .5s ease, padding .5s ease;
-                            -moz-transition: color .5s ease, padding .5s ease;
-                            transition: color .5s ease, padding .5s ease; font-size: 3.5rem}
+    width: 100%; -webkit-transition: color .5s ease, padding .5s ease;
+    -moz-transition: color .5s ease, padding .5s ease;
+    transition: color .5s ease, padding .5s ease; font-size: 3.5rem}
 .nav > ul > li:hover, .nav > ul > li:focus        {color: white; padding-left: 15px;}
 .nav > ul > li:before       {content: ''; display: block; position: absolute; right: 0; bottom: 0; height: 1px;
-                            width: 100%; -webkit-transition: width 0s ease; transition: width 0s ease;}
+    width: 100%; -webkit-transition: width 0s ease; transition: width 0s ease;}
 .nav > ul > li:after        {content: ''; display: block; position: absolute; left: 0; bottom: 0; height: 1px;
-                            width: 100%; background: #3bc1a0; -webkit-transition: width .5s ease;
-                            transition: width .5s ease;}
+    width: 100%; background: #3bc1a0; -webkit-transition: width .5s ease;
+    transition: width .5s ease;}
 .nav > ul > li:hover:before {width: 0; background: #3bc1a0; -webkit-transition: width .5s ease;
-                            transition: width 1s ease;}
+    transition: width 1s ease;}
 .nav > ul > li:hover:after  {width: 0; background: transparent; -webkit-transition: width 0s ease;
-                            transition: width 0.5s ease;}
+    transition: width 0.5s ease;}
 .buttonBlock .btn            {position: static; margin: 0;  background: none; font-size: 3.5rem }
 /*--------------------------------    Animation   ----------------------------------------*/
 .circle {-webkit-animation: open 10s infinite; animation: open 10s infinite;}

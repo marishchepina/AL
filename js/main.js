@@ -1,3 +1,4 @@
+
 let homePage = document.getElementById("btn--home");
 const STEP1 = document.getElementById("btn--task1");
 const STEP2 = document.getElementById("btn--task2");
@@ -6,6 +7,8 @@ const STEP4 = document.getElementById("btn--task4");
 let container = document.getElementById("container");
 var wordList;
 let lessonButList = document.getElementById("lessonButList");
+let class2 = document.getElementById("class2");
+let class4 = document.getElementById("class4");
 const MESSAGE = document.getElementById("message");
 let taskButBlock = document.getElementById("taskButBlock");
 let wordlistButBlock = document.getElementById("wordlistButBlock");
@@ -26,36 +29,60 @@ let userWordArray = [];
 document.addEventListener('DOMContentLoaded', function (event) {
     MESSAGE.classList.add('top');
     MESSAGE.style.backgroundImage = "url('img/emotion/music.gif')";
-    for (key in AllWordLists) {
+    MESSAGE.style.backgroundPosition = "center 8.2rem";
+    MESSAGE.style.backgroundColor = "#f0924e";
+});
+
+class2.onclick = function (){
+    while (lessonButList.firstChild) {
+        lessonButList.removeChild(lessonButList.firstChild);
+    }
+    for (key in AllWordLists2) {
         let li = document.createElement('li');
         li.innerText = `Урок ${key}`;
         lessonButList.appendChild(li);
-        li.onclick = wordListUserChoise;
-        li.title  = key;
+        li.onclick = wordListUserChoise2;
     }
-});
+};
 
+class4.onclick = function (){
+    while (lessonButList.firstChild) {
+        lessonButList.removeChild(lessonButList.firstChild);
+    }
+    for (key in AllWordLists4) {
+        let li = document.createElement('li');
+        li.innerText = `Урок ${key}`;
+        lessonButList.appendChild(li);
+        li.onclick = wordListUserChoise4;
+    }
+};
 
-
-
-let wordListUserChoise = function (arg) {
+let wordListUserChoise2 = function (arg) {
     let UserChoiseNum;
     UserChoiseNum = parseInt((this.innerText).match(/\d+/));
     wordsRadio = [];
     imgsRadio = [];
+    wordList= AllWordLists2[UserChoiseNum];
+    taskButBlock.classList.remove('hide');
+    wordlistButBlock.classList.add('hide');
+    audioFolder = `2-l${UserChoiseNum}`;
+    document.getElementById('wordlist-toggle').checked = false;
+    document.getElementById('nav-toggle').checked = true;
+};
 
-    wordList= AllWordLists[UserChoiseNum];
+
+let wordListUserChoise4 = function (arg) {
+    let UserChoiseNum;
+    UserChoiseNum = parseInt((this.innerText).match(/\d+/));
+    wordsRadio = [];
+    imgsRadio = [];
+    wordList= AllWordLists4[UserChoiseNum];
     taskButBlock.classList.remove('hide');
     wordlistButBlock.classList.add('hide');
     audioFolder = `4-l${UserChoiseNum}`;
     document.getElementById('wordlist-toggle').checked = false;
     document.getElementById('nav-toggle').checked = true;
-    console.log(UserChoiseNum);
-    console.log(wordList);
-    console.log(audioFolder);
-
 };
-
 
 function random(arr) {
     var j, temp;
@@ -71,11 +98,11 @@ function random(arr) {
 
 let turnArr = function (arr) {
     arr.length = 0;
-        for (let i = 0; i < wordList.length; i++) {
-            arr.push(i);
-        }
-        random(arr);
-        return arr;
+    for (let i = 0; i < wordList.length; i++) {
+        arr.push(i);
+    }
+    random(arr);
+    return arr;
 }
 
 
@@ -159,6 +186,7 @@ let messageSucces = function () {
     let audio = document.createElement('audio');
     MESSAGE.className = 'top circle';
     MESSAGE.style.backgroundImage = "url('img/emotion/glad.gif')";
+    MESSAGE.style.backgroundPosition = "center top";
     audio.src = `audio\\MESSAGE\\tada.mp3`;
     audio.play();
     setTimeout(function () {
@@ -170,6 +198,7 @@ let messageFinish = function () {
     MESSAGE.className = 'top circle';
     let MESSAGE__text = document.createElement('div');
     MESSAGE.style.backgroundImage = "url('img/emotion/box.gif')";
+    MESSAGE.style.backgroundPosition = "center top";
     MESSAGE__text.innerText = "Завдання завершено!";
     MESSAGE.appendChild(MESSAGE__text);
 }
@@ -178,6 +207,8 @@ let messageCry = function () {
     let audio = document.createElement('audio');
     MESSAGE.className = 'top circle';
     MESSAGE.style.backgroundImage = "url('img/emotion/cry.gif')";
+    MESSAGE.style.backgroundPosition = "center top";
+    MESSAGE.style.backgroundSize = "cover";
     audio.src = `audio\\MESSAGE\\cry.mp3`;
     MESSAGE.appendChild(audio);
     audio.play();
@@ -190,6 +221,9 @@ let messageButtonNotPressed = function () {
     let audio = document.createElement('audio');
     MESSAGE.className = 'top circle';
     MESSAGE.style.backgroundImage = "url('img/emotion/lazy.gif')";
+    MESSAGE.style.backgroundPosition = "center center";
+    MESSAGE.style.backgroundSize = "100%";
+    MESSAGE.style.backgroundColor = "#e55842";
     audio.src = `audio\\MESSAGE\\lazy.mp3`;
     MESSAGE.appendChild(audio);
     audio.play();
