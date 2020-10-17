@@ -34,12 +34,9 @@ function showWord(listOfWords) {
     wordToShow.classList.add("top");
     let list = document.getElementsByClassName("task1");
     let audiolist = document.getElementsByClassName("audio");
-    cycleCounter++;
-    if (cycleCounter >= listOfWords.length) {
-        cycleCounter = 0;
-    }
     for (let item of list) {
         if (item.id == wordList[index].id) {
+            console.log("reading " + item.id);
             let audio = document.getElementById(item.id).getElementsByTagName('audio')[0];
             audio.play();
         }
@@ -53,9 +50,11 @@ function showWord(listOfWords) {
     }
 }
 let intervalVar;
-let animate = function(){showWord(wordList);
+let animate = function(){
+    showWord(wordList);
     intervalVar = setInterval(function () {
         showWord(wordList);
+
     }, 10000);
 }
 

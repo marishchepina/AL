@@ -1,4 +1,3 @@
-
 let homePage = document.getElementById("btn--home");
 const STEP1 = document.getElementById("btn--task1");
 const STEP2 = document.getElementById("btn--task2");
@@ -14,7 +13,6 @@ let taskButBlock = document.getElementById("taskButBlock");
 let wordlistButBlock = document.getElementById("wordlistButBlock");
 var audioFolder = "";
 let index = 0;
-let cycleCounter = 0;
 let userChoise;
 let imgsRadio = [];
 let wordTurn = [];
@@ -121,10 +119,15 @@ let removeClassBtnActiv = function () {
 }
 
 homePage.onclick = function () {
+    stopAnimate();
     taskButBlock.classList.add('hide');
     wordlistButBlock.classList.remove('hide');
     MESSAGE.classList.add('top');
     MESSAGE.style.backgroundImage = "url('img/emotion/music.gif')";
+    MESSAGE.style.backgroundSize = "cover";
+    MESSAGE.style.backgroundColor = "#f0924e";
+    MESSAGE.style.backgroundPosition = "center 8.2rem";
+    MESSAGE.innerText = '';
 };
 
 
@@ -187,6 +190,7 @@ let messageSucces = function () {
     MESSAGE.className = 'top circle';
     MESSAGE.style.backgroundImage = "url('img/emotion/glad.gif')";
     MESSAGE.style.backgroundPosition = "center top";
+    MESSAGE.style.backgroundSize = "cover";
     audio.src = `audio\\MESSAGE\\tada.mp3`;
     audio.play();
     setTimeout(function () {
@@ -195,12 +199,24 @@ let messageSucces = function () {
 }
 
 let messageFinish = function () {
+    let audio = document.createElement('audio');
     MESSAGE.className = 'top circle';
     let MESSAGE__text = document.createElement('div');
     MESSAGE.style.backgroundImage = "url('img/emotion/box.gif')";
     MESSAGE.style.backgroundPosition = "center top";
-    MESSAGE__text.innerText = "Завдання завершено!";
+    MESSAGE.style.backgroundSize = "cover";
     MESSAGE.appendChild(MESSAGE__text);
+    audio.src = `audio\\MESSAGE\\box.mp3`;
+    MESSAGE.appendChild(audio);
+    audio.play();
+
+    setTimeout(function () {
+        MESSAGE.style.backgroundImage = "url('img/emotion/love.gif')";
+        MESSAGE.style.backgroundSize = "100%";
+        MESSAGE.style.backgroundColor = "#e65a7c";
+        MESSAGE.style.backgroundPosition = "center center";
+        MESSAGE__text.innerText = "Завдання завершено!";
+    }, 4000);
 }
 
 let messageCry = function () {
@@ -208,7 +224,7 @@ let messageCry = function () {
     MESSAGE.className = 'top circle';
     MESSAGE.style.backgroundImage = "url('img/emotion/cry.gif')";
     MESSAGE.style.backgroundPosition = "center top";
-    MESSAGE.style.backgroundSize = "cover";
+    MESSAGE.style.backgroundSize = "100%";
     audio.src = `audio\\MESSAGE\\cry.mp3`;
     MESSAGE.appendChild(audio);
     audio.play();

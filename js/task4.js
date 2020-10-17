@@ -12,7 +12,7 @@ let renderWordTask4 = function (word) {
         task4__img.src = word.img;
         task4__img.className = "task4__img";
         task4__userWord.setAttribute("id", `task4__userWord`);
-        task4__userWord.setAttribute("placeholder", `${word.translate}`);
+        task4__userWord.setAttribute("placeholder", `${word.id}`);
         task4__letters.setAttribute("id", `task4__letters`);
         verifyBut.className = `btn btn--verify`;
         verifyBut.id = `verifyBtn`;

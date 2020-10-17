@@ -1,6 +1,6 @@
 let AllWordLists2 =
 {
-    1: [
+    '1': [
         {
             'id': 'school',
             'word': 'school',
@@ -38,7 +38,7 @@ let AllWordLists2 =
             'img': 'img/2-l1/6.jpg'
         },
     ],
-    2: [
+    '2': [
         {
             'id': 'spell',
             'word': 'spell',
@@ -70,7 +70,7 @@ let AllWordLists2 =
             'img': 'img/2-l2/5.gif'
         },
     ],
-    3: [
+    '3': [
         {
             'id': 'car',
             'word': 'car',
@@ -108,6 +108,91 @@ let AllWordLists2 =
             'img': 'img/2-l3/6.png'
         },
     ],
+    '4': [
+        {
+            'id': 'robot',
+            'word': 'robot',
+            'translate': 'робот',
+            'img': 'img/2-l4/1.gif'
+        },
+        {
+            'id': 'birthday',
+            'word': 'birthday',
+            'translate': 'день народження',
+            'img': 'img/2-l4/2.gif'
+        },
+        {
+            'id': 'cake',
+            'word': 'cake',
+            'translate': 'торт',
+            'img': 'img/2-l4/3.jpg'
+        },
+        {
+            'id': 'present',
+            'word': 'present',
+            'translate': 'подарунок',
+            'img': 'img/2-l4/4.gif'
+        },
+        {
+            'id': 'watch',
+            'word': 'watch',
+            'translate': 'наручний годинник',
+            'img': 'img/2-l4/5.jpg'
+        },
+
+    ],
+    '43233': [
+        {
+            'id': 'frog',
+            'word': 'frog',
+            'translate': 'жаба',
+            'img': 'img/2-l4/4-1/1.gif'
+        },
+        {
+            'id': 'teacher',
+            'word': 'teacher',
+            'translate': 'вчителька',
+            'img': 'img/2-l4/4-1/2.gif'
+        },
+        {
+            'id': 'close',
+            'word': 'close',
+            'translate': 'закрити',
+            'img': 'img/2-l4/4-1/3.jpg'
+        },
+        {
+            'id': 'door',
+            'word': 'door',
+            'translate': 'двері',
+            'img': 'img/2-l4/4-1/4.gif'
+        },
+        {
+            'id': 'window',
+            'word': 'window',
+            'translate': 'вікно',
+            'img': 'img/2-l4/4-1/5.jpg'
+        },
+        {
+            'id': 'stand up',
+            'word': 'stand up',
+            'translate': 'вставати',
+            'img': 'img/2-l4/4-1/6.gif'
+        },
+        {
+            'id': 'open',
+            'word': 'open',
+            'translate': 'відкрити',
+            'img': 'img/2-l4/4-1/7.gif'
+        },
+        {
+            'id': 'sit down',
+            'word': 'sit down',
+            'translate': 'сідати',
+            'img': 'img/2-l4/4-1/8.gif'
+        },
+
+    ],
+
 
 };
 
@@ -248,9 +333,9 @@ let AllWordLists4 =
             'img': 'img/4-l5/3.gif'
         },
         {
-            'id': 'thunder and lightning',
-            'word': 'thunder and lightning',
-            'translate': 'грім і блискавка',
+            'id': 'thunder',
+            'word': 'thunder',
+            'translate': 'грім',
             'img': 'img/4-l5/4.gif'
         },
         {
@@ -259,7 +344,161 @@ let AllWordLists4 =
             'translate': 'попереду',
             'img': 'img/4-l5/5.jpg'
         },
+        {
+            'id': 'lightning',
+            'word': 'lightning',
+            'translate': 'блискавка',
+            'img': 'img/4-l5/6.gif'
+        },
 
+    ],
+    6: [
+        {
+            'id': 'aquarium',
+            'word': 'aquarium',
+            'translate': 'акваріум',
+            'img': 'img/4-l6/1.gif'
+        },
+        {
+            'id': 'town hall',
+            'word': 'town hall',
+            'translate': 'мерія',
+            'img': 'img/4-l6/2.jpg'
+        },
+        {
+            'id': 'police station',
+            'word': 'police station',
+            'translate': 'відділення міліції',
+            'img': 'img/4-l6/3.jpg'
+        },
+        {
+            'id': 'pet shop',
+            'word': 'pet shop',
+            'translate': 'зоомагазин',
+            'img': 'img/4-l6/4.jpg'
+        },
+        {
+            'id': 'museum',
+            'word': 'museum',
+            'translate': 'музей',
+            'img': 'img/4-l6/5.jpg'
+        },
+        {
+            'id': 'cafe',
+            'word': 'cafe',
+            'translate': 'кафе',
+            'img': 'img/4-l6/6.jpg'
+        },
+
+    ],
+    7: [
+        {
+            'id': 'notice',
+            'word': 'notice',
+            'translate': 'помічати',
+            'img': 'img/4-l7/1.gif'
+        },
+        {
+            'id': 'blond',
+            'word': 'blond',
+            'translate': 'блондин',
+            'img': 'img/4-l7/2.jpg'
+        },
+        {
+            'id': 'mustache',
+            'word': 'mustache',
+            'translate': 'вуса',
+            'img': 'img/4-l7/3.jpg'
+        },
+        {
+            'id': 'beard',
+            'word': 'beard',
+            'translate': 'борода',
+            'img': 'img/4-l7/4.gif'
+        },
+        {
+            'id': 'thin',
+            'word': 'thin',
+            'translate': 'худий',
+            'img': 'img/4-l7/5.gif'
+        },
+        {
+            'id': 'curly',
+            'word': 'curly',
+            'translate': 'кучерявий',
+            'img': 'img/4-l7/6.png'
+        },
+        {
+            'id': 'face',
+            'word': 'face',
+            'translate': 'обличчя',
+            'img': 'img/4-l7/7.gif'
+        },
+
+    ],
+    9: [
+        {
+            'id': 'farm',
+            'word': 'farm',
+            'translate': 'ферма',
+            'img': 'img/4-l9/1.gif'
+        },
+        {
+            'id': 'cow',
+            'word': 'cow',
+            'translate': 'корова',
+            'img': 'img/4-l9/2.jpg'
+        },
+        {
+            'id': 'grass',
+            'word': 'grass',
+            'translate': 'трава',
+            'img': 'img/4-l9/3.gif'
+        },
+        {
+            'id': 'owl',
+            'word': 'owl',
+            'translate': 'сова',
+            'img': 'img/4-l9/4.gif'
+        },
+        {
+            'id': 'pond',
+            'word': 'pond',
+            'translate': 'ставок',
+            'img': 'img/4-l9/5.gif'
+        },
+        {
+            'id': 'bull',
+            'word': 'bull',
+            'translate': 'бик',
+            'img': 'img/4-l9/6.png'
+        },
+    ],
+    10: [
+        {
+            'id': 'scared',
+            'word': 'scared',
+            'translate': 'наляканий',
+            'img': 'img/4-l10/1-2.gif'
+        },
+        {
+            'id': 'confused',
+            'word': 'confused',
+            'translate': 'розгублений',
+            'img': 'img/4-l10/2.gif'
+        },
+        {
+            'id': 'nervous',
+            'word': 'nervous',
+            'translate': 'нервовий',
+            'img': 'img/4-l10/3.gif'
+        },
+        {
+            'id': 'unhappy',
+            'word': 'unhappy',
+            'translate': 'нещасний',
+            'img': 'img/4-l10/4.gif'
+        },
     ],
 };
 
