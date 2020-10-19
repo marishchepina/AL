@@ -13,7 +13,7 @@ input[type="radio"]{display: none}
 
 #container      {margin: 0 auto; width: 100%; height: auto; min-height: 100%; padding: 80px 5% 10px 5%;text-align: center; position: relative; max-width: 800px; flex-wrap: wrap; font-size: 6rem; line-height: 8rem;
     overflow-x: hidden}
-.buttonBlock    {position: absolute; z-index: 100; right: 0; top: 50%; transform: translateY(-50%); padding-right: 3rem }
+.buttonBlock    {position: absolute; z-index: 100; right: 0; top: 0; padding-right: 3rem }
 .buttonBlock .btn     {width: 100%}
 .btn            {cursor: pointer; border: 1px solid #fff; padding: 1rem; margin: 1rem; font-size: 2.5rem; background: #e55842; color: #fff; text-align: center}
 .btn--message   {display: block; margin: 0 auto; width: 90%;}
@@ -106,6 +106,16 @@ body { -webkit-animation: bugfix infinite 1s;}
     transition: opacity .5s .4s, transform .5s .4s;}
 .nav > ul > li:nth-child(5) {-webkit-transition: opacity .5s .5s, -webkit-transform .5s .5s;
     transition: opacity .5s .5s, transform .5s .5s;}
+.nav > ul > li:nth-child(6) {-webkit-transition: opacity .5s .5s, -webkit-transform .5s .6s;
+    transition: opacity .5s .6s, transform .5s .6s;}
+.nav > ul > li:nth-child(7) {-webkit-transition: opacity .5s .5s, -webkit-transform .5s .7s;
+    transition: opacity .5s .7s, transform .5s .7s;}
+.nav > ul > li:nth-child(7) {-webkit-transition: opacity .5s .5s, -webkit-transform .5s .8s;
+    transition: opacity .5s .8s, transform .5s .8s;}
+.nav > ul > li:nth-child(7) {-webkit-transition: opacity .5s .5s, -webkit-transform .5s .9s;
+    transition: opacity .5s .9s, transform .5s .9s;}
+.nav > ul > li:nth-child(7) {-webkit-transition: opacity .5s .5s, -webkit-transform .5s .10s;
+    transition: opacity .5s .10s, transform .5s .10s;}
 .nav > ul > li              {cursor: pointer; display: inline-block; position: relative; padding: 0; color: #dadada;
     width: 100%; -webkit-transition: color .5s ease, padding .5s ease;
     -moz-transition: color .5s ease, padding .5s ease;

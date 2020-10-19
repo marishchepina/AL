@@ -224,7 +224,7 @@ let messageCry = function () {
     MESSAGE.className = 'top circle';
     MESSAGE.style.backgroundImage = "url('img/emotion/cry.gif')";
     MESSAGE.style.backgroundPosition = "center top";
-    MESSAGE.style.backgroundSize = "100%";
+    MESSAGE.style.backgroundSize = "cover";
     audio.src = `audio\\MESSAGE\\cry.mp3`;
     MESSAGE.appendChild(audio);
     audio.play();

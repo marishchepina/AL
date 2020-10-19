@@ -139,9 +139,6 @@ let AllWordLists2 =
             'translate': 'наручний годинник',
             'img': 'img/2-l4/5.jpg'
         },
-
-    ],
-    '43233': [
         {
             'id': 'frog',
             'word': 'frog',
@@ -190,9 +187,142 @@ let AllWordLists2 =
             'translate': 'сідати',
             'img': 'img/2-l4/4-1/8.gif'
         },
-
+    ],
+    '5': [
+        {
+            'id': 'sunny',
+            'word': 'sunny',
+            'translate': 'сонячно',
+            'img': 'img/2-l5/1.gif'
+        },
+        {
+            'id': 'family',
+            'word': 'family',
+            'translate': 'сім\'я',
+            'img': 'img/2-l5/2.jpg'
+        },
+        {
+            'id': 'mum',
+            'word': 'mum',
+            'translate': 'мама',
+            'img': 'img/2-l5/3.jpg'
+        },
+        {
+            'id': 'dad',
+            'word': 'dad',
+            'translate': 'тато',
+            'img': 'img/2-l5/4.jpg'
+        },
+        {
+            'id': 'brother',
+            'word': 'brother',
+            'translate': 'брат',
+            'img': 'img/2-l5/5.jpg'
+        },
+        {
+            'id': 'sister',
+            'word': 'sister',
+            'translate': 'сестра',
+            'img': 'img/2-l5/6.jpg'
+        },
     ],
 
+    '6': [
+        {
+            'id': 'grandpa',
+            'word': 'grandpa',
+            'translate': 'дідусь',
+            'img': 'img/2-l6/1.jpg'
+        },
+        {
+            'id': 'baby',
+            'word': 'baby',
+            'translate': 'малюк',
+            'img': 'img/2-l6/2.jpg'
+        },
+        {
+            'id': 'boy',
+            'word': 'boy',
+            'translate': 'хлопчик',
+            'img': 'img/2-l6/3.gif'
+        },
+        {
+            'id': 'girl',
+            'word': 'girl',
+            'translate': 'дівчинка',
+            'img': 'img/2-l6/4.gif'
+        },
+        {
+            'id': 'grandma',
+            'word': 'grandma',
+            'translate': 'бабуся',
+            'img': 'img/2-l6/5.jpg'
+        },
+        {
+            'id': 'friend',
+            'word': 'friend',
+            'translate': 'друг/подружка',
+            'img': 'img/2-l6/6.jpg'
+        },
+    ],
+    '7': [
+        {
+            'id': 'cowboy',
+            'word': 'cowboy',
+            'translate': 'ковбой',
+            'img': 'img/2-l7/1.gif'
+        },
+        {
+            'id': 'box',
+            'word': 'box',
+            'translate': 'коробка',
+            'img': 'img/2-l7/2.gif'
+        },
+        {
+            'id': 'сlothes',
+            'word': 'сlothes',
+            'translate': 'одяг',
+            'img': 'img/2-l7/3.gif'
+        },
+        {
+            'id': 'spy',
+            'word': 'spy',
+            'translate': 'шпіон',
+            'img': 'img/2-l7/4.gif'
+        },
+        {
+            'id': 'dancer',
+            'word': 'dancer',
+            'translate': 'танцівниця',
+            'img': 'img/2-l7/5.gif'
+        },
+    ],
+    '8': [
+        {
+            'id': 'pirate',
+            'word': 'pirate',
+            'translate': 'пірат',
+            'img': 'img/2-l8/1.gif'
+        },
+        {
+            'id': 'clown',
+            'word': 'clown',
+            'translate': 'клоун',
+            'img': 'img/2-l8/2.gif'
+        },
+        {
+            'id': 'king',
+            'word': 'king',
+            'translate': 'король',
+            'img': 'img/2-l8/3.gif'
+        },
+        {
+            'id': 'crown',
+            'word': 'crown',
+            'translate': 'корона',
+            'img': 'img/2-l8/4.gif'
+        },
+    ],
 
 };
 
@@ -500,6 +630,51 @@ let AllWordLists4 =
             'img': 'img/4-l10/4.gif'
         },
     ],
+    11: [
+        {
+            'id': 'well',
+            'word': 'well',
+            'translate': 'здоровий',
+            'img': 'img/4-l11/1.gif'
+        },
+        {
+            'id': 'сold',
+            'word': 'сold',
+            'translate': 'змерзлий',
+            'img': 'img/4-l11/2.gif'
+        },
+        {
+            'id': 'headache',
+            'word': 'headache',
+            'translate': 'головний біль',
+            'img': 'img/4-l11/3.jpg'
+        },
+        {
+            'id': 'sore throat',
+            'word': 'sore throat',
+            'translate': 'біль у горлі',
+            'img': 'img/4-l11/4.jpg'
+        },
+        {
+            'id': 'earache',
+            'word': 'earache',
+            'translate': 'біль у вусі',
+            'img': 'img/4-l11/5.jpg'
+        },
+        {
+            'id': 'ill',
+            'word': 'ill',
+            'translate': 'хворий',
+            'img': 'img/4-l11/6.gif'
+        },
+        {
+            'id': 'stomachache',
+            'word': 'stomachache',
+            'translate': 'біль у животі',
+            'img': 'img/4-l11/7.png'
+        },
+    ],
+
 };
 
 
