@@ -106,7 +106,7 @@ let AllWordLists2 =
             'word': 'сard',
             'translate': 'картка',
             'img': 'img/2-l3/6.png'
-        },
+        }
     ],
     '4': [
         {
@@ -322,7 +322,131 @@ let AllWordLists2 =
             'translate': 'корона',
             'img': 'img/2-l8/4.gif'
         },
+        {
+            'id': 'duck',
+            'word': 'duck',
+            'translate': 'кaчка',
+            'img': 'img/2-l8/5.gif'
+        },
+        {
+            'id': 'happy',
+            'word': 'happy',
+            'translate': 'щасливий',
+            'img': 'img/2-l8/6.jpg'
+        },
+        {
+            'id': 'small',
+            'word': 'small',
+            'translate': 'малий',
+            'img': 'img/2-l8/7.jpg'
+        },
+        {
+            'id': 'big',
+            'word': 'big',
+            'translate': 'великий',
+            'img': 'img/2-l8/8.jpg'
+        },
+        {
+            'id': 'sad',
+            'word': 'sad',
+            'translate': 'сумний',
+            'img': 'img/2-l8/9.png'
+        },
+        {
+            'id': 'swan',
+            'word': 'swan',
+            'translate': 'лебідь',
+            'img': 'img/2-l8/10.gif'
+        }
     ],
+    '9': [
+        {
+            'id': 'kite',
+            'word': 'kite',
+            'translate': 'повітряний змій',
+            'img': 'img/2-l9/1.gif'
+        },
+        {
+            'id': 'cloudy',
+            'word': 'cloudy',
+            'translate': 'хмарно',
+            'img': 'img/2-l9/2.gif'
+        },
+        {
+            'id': 'computer game',
+            'word': 'computer game',
+            'translate': 'комп\'ютерна гра',
+            'img': 'img/2-l9/3.gif'
+        },
+        {
+            'id': 'old',
+            'word': 'old',
+            'translate': 'старий',
+            'img': 'img/2-l9/4.png'
+        },
+        {
+            'id': 'radio',
+            'word': 'radio',
+            'translate': 'радіо',
+            'img': 'img/2-l9/5.gif'
+        },
+        {
+            'id': 'new',
+            'word': 'new',
+            'translate': 'новий',
+            'img': 'img/2-l9/6.jpg'
+        },
+        {
+            'id': 'bike',
+            'word': 'bike',
+            'translate': 'велосипед',
+            'img': 'img/2-l9/7.gif'
+        }
+    ],
+    '10': [
+        {
+            'id': 'toys',
+            'word': 'toys',
+            'translate': 'іграшки',
+            'img': 'img/2-10/1.jpg'
+        },
+        {
+            'id': 'rollerblades',
+            'word': 'rollerblades',
+            'translate': 'ролики',
+            'img': 'img/2-l10/2.jpg'
+        },
+        {
+            'id': 'train',
+            'word': 'train',
+            'translate': 'поїзд',
+            'img': 'img/2-l10/3.gif'
+        },
+        {
+            'id': 'slow',
+            'word': 'slow',
+            'translate': 'повільний',
+            'img': 'img/2-l10/4.jpg'
+        },
+        {
+            'id': 'fast',
+            'word': 'fast',
+            'translate': 'швидкий',
+            'img': 'img/2-l10/5.jpg'
+        },
+        {
+            'id': 'winner',
+            'word': 'winner',
+            'translate': 'переможець',
+            'img': 'img/2-l10/6.jpg'
+        },
+        {
+            'id': 'prize',
+            'word': 'prize',
+            'translate': 'приз',
+            'img': 'img/2-l10/7.gif'
+        }
+    ]
 
 };
 
@@ -518,7 +642,7 @@ let AllWordLists4 =
             'word': 'cafe',
             'translate': 'кафе',
             'img': 'img/4-l6/6.jpg'
-        },
+        }
 
     ],
     7: [
@@ -563,7 +687,7 @@ let AllWordLists4 =
             'word': 'face',
             'translate': 'обличчя',
             'img': 'img/4-l7/7.gif'
-        },
+        }
 
     ],
     9: [
@@ -602,7 +726,7 @@ let AllWordLists4 =
             'word': 'bull',
             'translate': 'бик',
             'img': 'img/4-l9/6.png'
-        },
+        }
     ],
     10: [
         {
@@ -672,8 +796,40 @@ let AllWordLists4 =
             'word': 'stomachache',
             'translate': 'біль у животі',
             'img': 'img/4-l11/7.png'
-        },
+        }
     ],
+    '13': [
+        {
+            'id': 'train station',
+            'word': 'train station',
+            'translate': 'зупинка поїзда',
+            'img': 'img/4-l13/1.jpg'
+        },
+        {
+            'id': 'road',
+            'word': 'road',
+            'translate': 'дорога',
+            'img': 'img/4-l13/2.gif'
+        },
+        {
+            'id': 'market',
+            'word': 'market',
+            'translate': 'базар',
+            'img': 'img/4-l13/3.gif'
+        },
+        {
+            'id': 'сastle',
+            'word': 'сastle',
+            'translate': 'замок',
+            'img': 'img/4-l13/4.png'
+        },
+        {
+            'id': 'bridge',
+            'word': 'bridge',
+            'translate': 'міст',
+            'img': 'img/4-l13/5.jpg'
+        }
+    ]
 
 };
 
