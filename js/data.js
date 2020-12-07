@@ -446,6 +446,50 @@ let AllWordLists2 =
             'translate': 'приз',
             'img': 'img/2-l10/7.gif'
         }
+    ],
+    '12': [
+        {
+            'id': 'circus',
+            'word': 'circus',
+            'translate': 'цирк',
+            'img': 'img/2-l12/1.gif'
+        },
+        {
+            'id': 'funny',
+            'word': 'funny',
+            'translate': 'веселий',
+            'img': 'img/2-l12/2.gif'
+        },
+        {
+            'id': 'long',
+            'word': 'long',
+            'translate': 'довгий',
+            'img': 'img/2-l12/3.jpg'
+        },
+        {
+            'id': 'short',
+            'word': 'short',
+            'translate': 'короткий',
+            'img': 'img/2-l12/4.jpg'
+        },
+        {
+            'id': 'strong',
+            'word': 'strong',
+            'translate': 'сильний',
+            'img': 'img/2-l12/5.gif'
+        },
+        {
+            'id': 'trunk',
+            'word': 'trunk',
+            'translate': 'хобот',
+            'img': 'img/2-l12/6.gif'
+        },
+        {
+            'id': 'star',
+            'word': 'star',
+            'translate': 'зірка',
+            'img': 'img/2-l12/7.gif'
+        }
     ]
 
 };
@@ -829,7 +873,40 @@ let AllWordLists4 =
             'translate': 'міст',
             'img': 'img/4-l13/5.jpg'
         }
+    ],
+    '15': [
+        {
+            'id': 'stew',
+            'word': 'stew',
+            'translate': 'рагу',
+            'img': 'img/4-l15/1.png'
+        },
+        {
+            'id': 'rice',
+            'word': 'rice',
+            'translate': 'рис',
+            'img': 'img/4-l15/2.jpg'
+        },
+        {
+            'id': 'cabbage',
+            'word': 'cabbage',
+            'translate': 'капуста',
+            'img': 'img/4-l15/3.jpg'
+        },
+        {
+            'id': 'steak',
+            'word': 'steak',
+            'translate': 'стейк',
+            'img': 'img/4-l15/4.jpg'
+        },
+        {
+            'id': 'peas',
+            'word': 'peas',
+            'translate': 'горох',
+            'img': 'img/4-l15/5.jpg'
+        }
     ]
+
 
 };
 
