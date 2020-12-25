@@ -489,9 +489,140 @@ let AllWordLists2 =
             'word': 'star',
             'translate': 'зірка',
             'img': 'img/2-l12/7.gif'
+        },
+    ],
+    '14': [
+        {
+            'id': 'hot',
+            'word': 'hot',
+            'translate': 'спекотно',
+            'img': 'img/2-l14/1.gif'
+        },
+        {
+            'id': 'treehouse',
+            'word': 'treehouse',
+            'translate': 'будинок на дереві',
+            'img': 'img/2-l14/2.jpg'
+        },
+        {
+            'id': 'shop',
+            'word': 'shop',
+            'translate': 'магазин',
+            'img': 'img/2-l14/3.gif'
+        },
+        {
+            'id': 'swing',
+            'word': 'swing',
+            'translate': 'гойдалки',
+            'img': 'img/2-l14/4.gif'
+        },
+        {
+            'id': 'slide',
+            'word': 'slide',
+            'translate': 'похила площина',
+            'img': 'img/2-l14/5.gif'
+        },
+        {
+            'id': 'climbing frame',
+            'word': 'climbing frame',
+            'translate': 'скелелазіння',
+            'img': 'img/2-l14/6.jpg'
+        },
+        {
+            'id': 'bus',
+            'word': 'bus',
+            'translate': 'автобус',
+            'img': 'img/2-l14/7.gif'
+        }
+    ],
+    '15': [
+        {
+            'id': 'sing',
+            'word': 'sing',
+            'translate': 'співати',
+            'img': 'img/2-l15/1.gif'
+        },
+        {
+            'id': 'jump',
+            'word': 'jump',
+            'translate': 'стрибати',
+            'img': 'img/2-l15/2.gif'
+        },
+        {
+            'id': 'high',
+            'word': 'high',
+            'translate': 'високий',
+            'img': 'img/2-l15/3.jpg'
+        },
+        {
+            'id': 'ride',
+            'word': 'ride',
+            'translate': 'їздити',
+            'img': 'img/2-l15/4.gif'
+        },
+        {
+            'id': 'swim',
+            'word': 'swim',
+            'translate': 'плавати',
+            'img': 'img/2-l15/5.gif'
+        },
+        {
+            'id': 'сlimb',
+            'word': 'climb',
+            'translate': 'підйом',
+            'img': 'img/2-l15/6.gif'
+        },
+        {
+            'id': 'play the guitar',
+            'word': 'play the guitar',
+            'translate': 'грати на гітарі',
+            'img': 'img/2-l15/7.gif'
+        }
+    ],
+    '16': [
+        {
+            'id': 'skip',
+            'word': 'skip',
+            'translate': 'перескочити',
+            'img': 'img/2-l16/1.gif'
+        },
+        {
+            'id': 'rollerblade',
+            'word': 'rollerblade',
+            'translate': 'ролики',
+            'img': 'img/2-l16/2.gif'
+        },
+        {
+            'id': 'fly',
+            'word': 'fly',
+            'translate': 'літати',
+            'img': 'img/2-l16/3.gif'
+        },
+        {
+            'id': 'do a handstand',
+            'word': 'do a handstand',
+            'translate': 'зробити стійку на руках',
+            'img': 'img/2-l16/4.gif'
+        },
+        {
+            'id': 'walk',
+            'word': 'walk',
+            'translate': 'гуляти',
+            'img': 'img/2-l16/5.gif'
+        },
+        {
+            'id': 'run',
+            'word': 'run',
+            'translate': 'бігти',
+            'img': 'img/2-l16/6.gif'
+        },
+        {
+            'id': 'carry',
+            'word': 'carry',
+            'translate': 'нести',
+            'img': 'img/2-l16/7.gif'
         }
     ]
-
 };
 
 
@@ -527,7 +658,7 @@ let AllWordLists4 =
             'word': 'helpful',
             'translate': 'корисний',
             'img': 'img/4-l1/5-1.jpg'
-        },
+        }
     ],
     2: [
         {
@@ -609,7 +740,7 @@ let AllWordLists4 =
             'word': 'quickly',
             'translate': 'швидко',
             'img': 'img/4-l3/6-1.jpg'
-        },
+        }
     ],
     5: [
         {
@@ -647,7 +778,7 @@ let AllWordLists4 =
             'word': 'lightning',
             'translate': 'блискавка',
             'img': 'img/4-l5/6.gif'
-        },
+        }
 
     ],
     6: [
@@ -796,7 +927,7 @@ let AllWordLists4 =
             'word': 'unhappy',
             'translate': 'нещасний',
             'img': 'img/4-l10/4.gif'
-        },
+        }
     ],
     11: [
         {
@@ -905,9 +1036,159 @@ let AllWordLists4 =
             'translate': 'горох',
             'img': 'img/4-l15/5.jpg'
         }
+    ],
+    '17': [
+        {
+            'id': 'rescue',
+            'word': 'rescue',
+            'translate': 'порятунок',
+            'img': 'img/4-l17/1.jpg'
+        },
+        {
+            'id': 'scarf',
+            'word': 'scarf',
+            'translate': 'шарф',
+            'img': 'img/4-l17/2.jpg'
+        },
+        {
+            'id': 'glove',
+            'word': 'glove',
+            'translate': 'рукавичка',
+            'img': 'img/4-l17/3.png'
+        },
+        {
+            'id': 'jacket',
+            'word': 'jacket',
+            'translate': 'куртка',
+            'img': 'img/4-l17/4.jpg'
+        },
+        {
+            'id': 'belt',
+            'word': 'belt',
+            'translate': 'пояс',
+            'img': 'img/4-l17/5.jpg'
+        },
+        {
+            'id': 'trainers',
+            'word': 'trainers',
+            'translate': 'кросівки',
+            'img': 'img/4-l17/6.png'
+        },
+        {
+            'id': 'tie',
+            'word': 'tie',
+            'translate': 'краватка',
+            'img': 'img/4-l17/7.jpg'
+        }
+    ],
+    '18': [
+        {
+            'id': 'arrive',
+            'word': 'arrive',
+            'translate': 'прибувати',
+            'img': 'img/4-l18/1.jpg'
+        },
+        {
+            'id': 'leave',
+            'word': 'leave',
+            'translate': 'залишати',
+            'img': 'img/4-l18/2.jpg'
+        },
+        {
+            'id': 'start',
+            'word': 'start',
+            'translate': 'старт',
+            'img': 'img/4-l18/3.gif'
+        },
+        {
+            'id': 'lose',
+            'word': 'lose',
+            'translate': 'програти',
+            'img': 'img/4-l18/4.gif'
+        },
+        {
+            'id': 'bring',
+            'word': 'bring',
+            'translate': 'принести',
+            'img': 'img/4-l18/5.gif'
+        },
+        {
+            'id': 'finish',
+            'word': 'finish',
+            'translate': 'фініш',
+            'img': 'img/4-l18/6.gif'
+        }
+    ],
+    '19': [
+        {
+            'id': 'bank',
+            'word': 'bank',
+            'translate': 'банк',
+            'img': 'img/4-l19/1.gif'
+        },
+        {
+            'id': 'post office',
+            'word': 'post office',
+            'translate': 'поштове відділення',
+            'img': 'img/4-l19/2.gif'
+        },
+        {
+            'id': 'send',
+            'word': 'send',
+            'translate': 'надіслати',
+            'img': 'img/4-l19/3.gif'
+        },
+        {
+            'id': 'find',
+            'word': 'find',
+            'translate': 'знайти',
+            'img': 'img/4-l19/4.gif'
+        },
+        {
+            'id': 'garage',
+            'word': 'garage',
+            'translate': 'гараж',
+            'img': 'img/4-l19/5.gif'
+        },
+        {
+            'id': 'hire',
+            'word': 'hire',
+            'translate': 'наймати',
+            'img': 'img/4-l19/6.gif'
+        }
+    ],
+    '21': [
+        {
+            'id': 'van',
+            'word': 'van',
+            'translate': 'фургон',
+            'img': 'img/4-l21/1.gif'
+        },
+        {
+            'id': 'motobike',
+            'word': 'motobike',
+            'translate': 'мотоцикл',
+            'img': 'img/4-l21/2.gif'
+        },
+        {
+            'id': 'fire engine',
+            'word': 'fire engine',
+            'translate': 'пожежна машина',
+            'img': 'img/4-l21/3.gif'
+        },
+        {
+            'id': 'scooter',
+            'word': 'scooter',
+            'translate': 'скутер',
+            'img': 'img/4-l21/4.gif'
+        },
+        {
+            'id': 'helicopter',
+            'word': 'helicopter',
+            'translate': 'вертоліт',
+            'img': 'img/4-l21/5.gif'
+        }
     ]
-
-
 };
 
 
