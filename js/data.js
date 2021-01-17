@@ -622,6 +622,50 @@ let AllWordLists2 =
             'translate': 'нести',
             'img': 'img/2-l16/7.gif'
         }
+    ],
+    '17': [
+        {
+            'id': 'mobile phone',
+            'word': 'mobile phone',
+            'translate': 'мобільний телефон',
+            'img': 'img/2-l17/1.gif'
+        },
+        {
+            'id': 'desk',
+            'word': 'desk',
+            'translate': 'парта',
+            'img': 'img/2-l17/2.jpg'
+        },
+        {
+            'id': 'cupboard',
+            'word': 'cupboard',
+            'translate': 'шафа',
+            'img': 'img/2-l17/3.gif'
+        },
+        {
+            'id': 'computer',
+            'word': 'computer',
+            'translate': 'комп\'ютер',
+            'img': 'img/2-l17/4.gif'
+        },
+        {
+            'id': 'bookcase',
+            'word': 'bookcase',
+            'translate': 'книжкова шафа',
+            'img': 'img/2-l17/5.jpg'
+        },
+        {
+            'id': 'table',
+            'word': 'table',
+            'translate': 'стіл',
+            'img': 'img/2-l17/6.gif'
+        },
+        {
+            'id': 'bed',
+            'word': 'bed',
+            'translate': 'ліжко',
+            'img': 'img/2-l17/7.gif'
+        }
     ]
 };
 

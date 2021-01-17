@@ -15,7 +15,7 @@ let renderWord = function (word) {
         task1__img__img.src = word[i].img;
         audio.src = `audio\\${audioFolder}\\${i + 1}.mp3`;
         task1__img.className = 'task1__img';
-        task1__img__img.className ='circle';
+        task1__img__img.className = 'circle';
         task1__word.className = 'task1__word';
         task1__word__translation.className = 'task1__word__translation';
         audio.className = `audio`;
@@ -36,7 +36,7 @@ function showWord(listOfWords) {
     let audiolist = document.getElementsByClassName("audio");
     for (let item of list) {
         if (item.id == wordList[index].id) {
-            console.log("reading " + item.id);
+            //console.log("reading " + item.id);
             let audio = document.getElementById(item.id).getElementsByTagName('audio')[0];
             audio.play();
         }
@@ -50,7 +50,7 @@ function showWord(listOfWords) {
     }
 }
 let intervalVar;
-let animate = function(){
+let animate = function () {
     showWord(wordList);
     intervalVar = setInterval(function () {
         showWord(wordList);
@@ -60,8 +60,8 @@ let animate = function(){
 
 
 
- let stopAnimate = function() {
-     clearInterval(intervalVar);
-     cleanContainer();
- }
+let stopAnimate = function () {
+    clearInterval(intervalVar);
+    cleanContainer();
+}
 
