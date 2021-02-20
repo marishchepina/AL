@@ -36,7 +36,7 @@ let AllWordLists2 =
             'word': 'book',
             'translate': 'книжка',
             'img': 'img/2-l1/6.jpg'
-        },
+        }
     ],
     '2': [
         {
@@ -68,7 +68,7 @@ let AllWordLists2 =
             'word': 'be quiet',
             'translate': 'бути спокійним',
             'img': 'img/2-l2/5.gif'
-        },
+        }
     ],
     '3': [
         {
@@ -186,7 +186,7 @@ let AllWordLists2 =
             'word': 'sit down',
             'translate': 'сідати',
             'img': 'img/2-l4/4-1/8.gif'
-        },
+        }
     ],
     '5': [
         {
@@ -224,7 +224,7 @@ let AllWordLists2 =
             'word': 'sister',
             'translate': 'сестра',
             'img': 'img/2-l5/6.jpg'
-        },
+        }
     ],
 
     '6': [
@@ -263,7 +263,7 @@ let AllWordLists2 =
             'word': 'friend',
             'translate': 'друг/подружка',
             'img': 'img/2-l6/6.jpg'
-        },
+        }
     ],
     '7': [
         {
@@ -295,7 +295,7 @@ let AllWordLists2 =
             'word': 'dancer',
             'translate': 'танцівниця',
             'img': 'img/2-l7/5.gif'
-        },
+        }
     ],
     '8': [
         {
@@ -665,6 +665,44 @@ let AllWordLists2 =
             'word': 'bed',
             'translate': 'ліжко',
             'img': 'img/2-l17/7.gif'
+        }
+    ],
+    '21': [
+        {
+            'id': 'play',
+            'word': 'play',
+            'translate': 'гратися',
+            'img': 'img/2-l21/1.gif'
+        },
+        {
+            'id': 'read',
+            'word': 'read',
+            'translate': 'читати',
+            'img': 'img/2-l21/2.gif'
+        },
+        {
+            'id': 'sleep',
+            'word': 'sleep',
+            'translate': 'спати',
+            'img': 'img/2-l21/3.gif'
+        },
+        {
+            'id': 'hide',
+            'word': 'hide',
+            'translate': 'ховатися',
+            'img': 'img/2-l21/4.gif'
+        },
+        {
+            'id': 'water pistol',
+            'word': 'water pistol',
+            'translate': 'водний пістолет',
+            'img': 'img/2-l21/5.gif'
+        },
+        {
+            'id': 'come',
+            'word': 'come',
+            'translate': 'приходити',
+            'img': 'img/2-l21/6.gif'
         }
     ]
 };
@@ -1231,6 +1269,44 @@ let AllWordLists4 =
             'word': 'helicopter',
             'translate': 'вертоліт',
             'img': 'img/4-l21/5.gif'
+        }
+    ],
+    '25': [
+        {
+            'id': 'join in',
+            'word': 'join in',
+            'translate': 'приєднатися',
+            'img': 'img/4-l25/1.gif'
+        },
+        {
+            'id': 'fancy dress',
+            'word': 'fancy dress',
+            'translate': 'маскарадний костюм',
+            'img': 'img/4-l25/2.jpg'
+        },
+        {
+            'id': 'costume',
+            'word': 'costume',
+            'translate': 'костюм',
+            'img': 'img/4-l25/3.gif'
+        },
+        {
+            'id': 'alien',
+            'word': 'alien',
+            'translate': 'прибулець',
+            'img': 'img/4-l25/4.gif'
+        },
+        {
+            'id': 'superhero',
+            'word': 'superhero',
+            'translate': 'супергерой',
+            'img': 'img/4-l25/5.gif'
+        },
+        {
+            'id': 'pop star',
+            'word': 'pop star',
+            'translate': 'поп зірка',
+            'img': 'img/4-l25/6.gif'
         }
     ]
 };
