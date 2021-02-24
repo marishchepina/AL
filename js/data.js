@@ -704,6 +704,50 @@ let AllWordLists2 =
             'translate': 'приходити',
             'img': 'img/2-l21/6.gif'
         }
+    ],
+    '22': [
+        {
+            'id': 'have a shower',
+            'word': 'have a shower',
+            'translate': 'приймати душы',
+            'img': 'img/2-l22/1.gif'
+        },
+        {
+            'id': 'trousers',
+            'word': 'trousers',
+            'translate': 'штани',
+            'img': 'img/2-l22/2.png'
+        },
+        {
+            'id': 'T-shirt',
+            'word': 'T-shirt',
+            'translate': 'футболка',
+            'img': 'img/2-l22/3.png'
+        },
+        {
+            'id': 'shoes',
+            'word': 'shoes',
+            'translate': 'взуття',
+            'img': 'img/2-l22/4.gif'
+        },
+        {
+            'id': 'skirt',
+            'word': 'skirt',
+            'translate': 'спідниця',
+            'img': 'img/2-l22/5.jpg'
+        },
+        {
+            'id': 'dress',
+            'word': 'dress',
+            'translate': 'сукня',
+            'img': 'img/2-l22/6.gif'
+        },
+        {
+            'id': 'sweater',
+            'word': 'sweater',
+            'translate': 'светр',
+            'img': 'img/2-l22/7.gif'
+        }
     ]
 };
 
