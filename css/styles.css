@@ -424,7 +424,7 @@ body {
 }
 
 .nav>.buttonBlock>li {
-    line-height: 2.5;
+    line-height: 1.2;
     opacity: 0;
     -webkit-transform: translateX(50%);
     -moz-transform: translateX(50%);
@@ -435,7 +435,7 @@ body {
     -ms-transition: opacity .5s .1s, -ms-transform .5s .1s;
     transition: opacity .5s .1s, transform .5s .1s;
     width: 90%;
-    padding: 0 1rem 0 1rem;
+    padding: 15px 1rem 15px 1rem;
     margin: 0 5% 0 5%;
     text-align: center
 }
@@ -597,3 +597,10 @@ body {
         transform: scale(1.0, 1.0);
     }
 }
+
+@media only screen and (max-width: 600px) {
+    .task2__label {
+     width: 46%;
+     margin: 2%;
+    }
+  }

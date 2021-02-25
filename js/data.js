@@ -709,7 +709,7 @@ let AllWordLists2 =
         {
             'id': 'have a shower',
             'word': 'have a shower',
-            'translate': 'приймати душы',
+            'translate': 'приймати душ',
             'img': 'img/2-l22/1.gif'
         },
         {
@@ -1351,6 +1351,50 @@ let AllWordLists4 =
             'word': 'pop star',
             'translate': 'поп зірка',
             'img': 'img/4-l25/6.gif'
+        }
+    ],
+    '24': [
+        {
+            'id': 'palace',
+            'word': 'palace',
+            'translate': 'палац',
+            'img': 'img/4-lprince/1.png'
+        },
+        {
+            'id': 'poor',
+            'word': 'poor',
+            'translate': 'бідний',
+            'img': 'img/4-lprince/1.jpg'
+        },
+        {
+            'id': 'begged',
+            'word': 'begged',
+            'translate': 'благав',
+            'img': 'img/4-lprince/7.jpg'
+        },
+        {
+            'id': 'gates',
+            'word': 'gates',
+            'translate': 'ворота',
+            'img': 'img/4-lprince/3.jpg'
+        },
+        {
+            'id': 'rich',
+            'word': 'rich',
+            'translate': 'багатий',
+            'img': 'img/4-lprince/1-1.jpg'
+        },
+        {
+            'id': 'servant',
+            'word': 'servant',
+            'translate': 'слуга',
+            'img': 'img/4-lprince/9.jpg'
+        },
+        {
+            'id': 'pauper',
+            'word': 'pauper',
+            'translate': 'жебрак',
+            'img': 'img/4-lprince/9.png'
         }
     ]
 };
