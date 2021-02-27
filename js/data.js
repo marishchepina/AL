@@ -748,6 +748,88 @@ let AllWordLists2 =
             'translate': 'светр',
             'img': 'img/2-l22/7.gif'
         }
+    ],
+    '23': [
+        {
+            'id': 'basketball',
+            'word': 'basketball',
+            'translate': 'баскетбол',
+            'img': 'img/2-l23/1.gif'
+        },
+        {
+            'id': 'volleyball',
+            'word': 'volleyball',
+            'translate': 'волейбол',
+            'img': 'img/2-l23/2.gif'
+        },
+        {
+            'id': 'football',
+            'word': 'football',
+            'translate': 'футбол',
+            'img': 'img/2-l23/3.gif'
+        },
+        {
+            'id': 'tennis',
+            'word': 'tennis',
+            'translate': 'теніс',
+            'img': 'img/2-l23/4.gif'
+        },
+        {
+            'id': 'idea',
+            'word': 'idea',
+            'translate': 'ідея',
+            'img': 'img/2-l23/5.gif'
+        },
+        {
+            'id': 'tired',
+            'word': 'tired',
+            'translate': 'втомлений',
+            'img': 'img/2-l23/6.gif'
+        }
+    ],
+    '24': [
+        {
+            'id': 'dream',
+            'word': 'dream',
+            'translate': 'coн',
+            'img': 'img/2-l24/1.gif'
+        },
+        {
+            'id': 'noise',
+            'word': 'noise',
+            'translate': 'шум',
+            'img': 'img/2-l24/2.gif'
+        },
+        {
+            'id': 'eat',
+            'word': 'eat',
+            'translate': 'їсти',
+            'img': 'img/2-l24/3.gif'
+        },
+        {
+            'id': 'drink',
+            'word': 'drink',
+            'translate': 'пити',
+            'img': 'img/2-l24/4.gif'
+        },
+        {
+            'id': 'upstairs',
+            'word': 'upstairs',
+            'translate': 'нагорі',
+            'img': 'img/2-l24/5.gif'
+        },
+        {
+            'id': 'roar',
+            'word': 'roar',
+            'translate': 'рев',
+            'img': 'img/2-l24/6.gif'
+        },
+        {
+            'id': 'snore',
+            'word': 'snore',
+            'translate': 'хропіти',
+            'img': 'img/2-l24/7.gif'
+        }
     ]
 };
 
@@ -1395,6 +1477,44 @@ let AllWordLists4 =
             'word': 'pauper',
             'translate': 'жебрак',
             'img': 'img/4-lprince/9.png'
+        }
+    ],
+    '26': [
+        {
+            'id': 'ice scating',
+            'word': 'ice scating',
+            'translate': 'катання на ковзанах',
+            'img': 'img/4-l26/1.gif'
+        },
+        {
+            'id': 'surfing',
+            'word': 'surfing',
+            'translate': 'серфінг',
+            'img': 'img/4-l26/2.gif'
+        },
+        {
+            'id': 'skateboarding',
+            'word': 'skateboarding',
+            'translate': 'скейтбординг',
+            'img': 'img/4-l26/3.gif'
+        },
+        {
+            'id': 'rock climbing',
+            'word': 'rock climbing',
+            'translate': 'скелелазіння',
+            'img': 'img/4-l26/4.gif'
+        },
+        {
+            'id': 'cycling',
+            'word': 'cycling',
+            'translate': 'їзда на велосипеді',
+            'img': 'img/4-l26/5.gif'
+        },
+        {
+            'id': 'fishing',
+            'word': 'fishing',
+            'translate': 'риболовля',
+            'img': 'img/4-l26/6.gif'
         }
     ]
 };
