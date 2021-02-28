@@ -1516,6 +1516,38 @@ let AllWordLists4 =
             'translate': 'риболовля',
             'img': 'img/4-l26/6.gif'
         }
+    ],
+    '27': [
+        {
+            'id': 'use',
+            'word': 'use',
+            'translate': 'використання',
+            'img': 'img/4-l27/1.gif'
+        },
+        {
+            'id': 'escape',
+            'word': 'escape',
+            'translate': 'втеча',
+            'img': 'img/4-l27/2.gif'
+        },
+        {
+            'id': 'reach',
+            'word': 'reach',
+            'translate': 'досягти',
+            'img': 'img/4-l27/3.gif'
+        },
+        {
+            'id': 'borrow',
+            'word': 'borrow',
+            'translate': 'позичати',
+            'img': 'img/4-l27/4.gif'
+        },
+        {
+            'id': 'hold',
+            'word': 'hold',
+            'translate': 'тримати',
+            'img': 'img/4-l27/5.gif'
+        }
     ]
 };
 
