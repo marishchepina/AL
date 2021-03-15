@@ -1818,7 +1818,7 @@ let AllWordLists4 = {
       id: "diamond",
       word: "diamond",
       translate: "діаматнт",
-      img: "img/4-l31/7.jpg",
+      img: "img/4-l31/7.gif",
     },
   ],
   33: [
@@ -1883,6 +1883,26 @@ let AllWordLists4 = {
       word: "restaurant",
       translate: "ресторан",
       img: "img/4-l34/5.gif",
+    },
+  ],
+  35: [
+    {
+      id: "brush",
+      word: "brush",
+      translate: "кисть",
+      img: "img/4-l35/1.gif",
+    },
+    {
+      id: "polish",
+      word: "polish",
+      translate: "полірувати",
+      img: "img/4-l35/2.gif",
+    },
+    {
+      id: "сhange",
+      word: "сhange",
+      translate: "змінити",
+      img: "img/4-l35/3.gif",
     },
   ],
 };
