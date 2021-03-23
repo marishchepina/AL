@@ -988,6 +988,50 @@ let AllWordLists2 = {
       img: "img/2-l28/6.gif",
     },
   ],
+  100: [
+    {
+      id: "giant",
+      word: "giant",
+      translate: "гігант",
+      img: "img/2-l24/1/1.gif",
+    },
+    {
+      id: "hear",
+      word: "hear",
+      translate: "чути",
+      img: "img/2-l24/1/2.gif",
+    },
+    {
+      id: "living room",
+      word: "living room",
+      translate: "загальна кімната",
+      img: "img/2-l24/1/3.gif",
+    },
+    {
+      id: "bathroom",
+      word: "bathroom",
+      translate: "ванна кімната",
+      img: "img/2-l24/1/4.gif",
+    },
+    {
+      id: "kitchen",
+      word: "kitchen",
+      translate: "кухня",
+      img: "img/2-l24/1/5.gif",
+    },
+    {
+      id: "bedroom",
+      word: "bedroom",
+      translate: "спальня",
+      img: "img/2-l24/1/6.gif",
+    },
+    {
+      id: "ghost",
+      word: "ghost",
+      translate: "привид",
+      img: "img/2-l24/1/7.gif",
+    },
+  ],
 };
 
 let AllWordLists4 = {
