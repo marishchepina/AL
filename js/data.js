@@ -1,3 +1,44 @@
+let AllWordLists3 = {
+  1: [
+    {
+      id: "Africa",
+      word: "Africa",
+      translate: "Африка",
+      img: "img/3-l1/1.jpg",
+    },
+    {
+      id: "airport",
+      word: "airport",
+      translate: "aеропорт",
+      img: "img/3-l1/2.gif",
+    },
+    {
+      id: "aunt",
+      word: "aunt",
+      translate: "тітка",
+      img: "img/3-l1/3.gif",
+    },
+    {
+      id: "uncle",
+      word: "uncle",
+      translate: "дядько",
+      img: "img/3-l1/4.gif",
+    },
+    {
+      id: "cousin",
+      word: "cousin",
+      translate: "двоюрідний брат / сестра",
+      img: "img/3-l1/5.gif",
+    },
+    {
+      id: "holiday",
+      word: "holiday",
+      translate: "свято / канікули",
+      img: "img/3-l1/6.jpg",
+    },
+  ],
+};
+
 let AllWordLists2 = {
   1: [
     {

@@ -371,8 +371,17 @@ input[type="radio"] {
   border-radius: 5px;
 }
 
+#class3 {
+  top: 9rem;
+}
+
 #class4 {
-  top: 9.7rem;
+  top: 16rem;
+}
+
+#class3:after {
+  content: "3 клас";
+  text-decoration: none;
 }
 
 #class2:after {
