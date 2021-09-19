@@ -9,6 +9,7 @@ let lessonButList = document.getElementById("lessonButList");
 let class2 = document.getElementById("class2");
 let class3 = document.getElementById("class3");
 let class4 = document.getElementById("class4");
+let class5 = document.getElementById("class5");
 const MESSAGE = document.getElementById("message");
 let taskButBlock = document.getElementById("taskButBlock");
 let wordlistButBlock = document.getElementById("wordlistButBlock");
@@ -27,7 +28,7 @@ let userWordArray = [];
 document.addEventListener("DOMContentLoaded", function (event) {
   MESSAGE.classList.add("top");
   MESSAGE.style.backgroundImage = "url('img/emotion/music.gif')";
-  MESSAGE.style.backgroundPosition = "center 8.2rem";
+  MESSAGE.style.backgroundPosition = "center 14rem";
   MESSAGE.style.backgroundColor = "#f0924e";
 });
 
@@ -67,6 +68,18 @@ class4.onclick = function () {
   }
 };
 
+class5.onclick = function () {
+  while (lessonButList.firstChild) {
+    lessonButList.removeChild(lessonButList.firstChild);
+  }
+  for (key in AllWordLists5) {
+    let li = document.createElement("li");
+    li.innerText = `Урок ${key}`;
+    lessonButList.appendChild(li);
+    li.onclick = wordListUserChoise5;
+  }
+};
+
 let wordListUserChoise2 = function (arg) {
   let UserChoiseNum;
   UserChoiseNum = parseInt(this.innerText.match(/\d+/));
@@ -102,6 +115,19 @@ let wordListUserChoise4 = function (arg) {
   taskButBlock.classList.remove("hide");
   wordlistButBlock.classList.add("hide");
   audioFolder = `4-l${UserChoiseNum}`;
+  document.getElementById("wordlist-toggle").checked = false;
+  document.getElementById("nav-toggle").checked = true;
+};
+
+let wordListUserChoise5 = function (arg) {
+  let UserChoiseNum;
+  UserChoiseNum = parseInt(this.innerText.match(/\d+/));
+  wordsRadio = [];
+  imgsRadio = [];
+  wordList = AllWordLists5[UserChoiseNum];
+  taskButBlock.classList.remove("hide");
+  wordlistButBlock.classList.add("hide");
+  audioFolder = `5-l${UserChoiseNum}`;
   document.getElementById("wordlist-toggle").checked = false;
   document.getElementById("nav-toggle").checked = true;
 };

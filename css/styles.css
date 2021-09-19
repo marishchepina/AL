@@ -372,11 +372,15 @@ input[type="radio"] {
 }
 
 #class3 {
-  top: 9rem;
+  top: 9.3rem;
 }
 
 #class4 {
   top: 16rem;
+}
+
+#class5 {
+  top: 23rem;
 }
 
 #class3:after {
@@ -391,6 +395,11 @@ input[type="radio"] {
 
 #class4:after {
   content: "4 клас";
+  text-decoration: none;
+}
+
+#class5:after {
+  content: "5 клас";
   text-decoration: none;
 }
 
