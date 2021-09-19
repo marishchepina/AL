@@ -37,6 +37,88 @@ let AllWordLists3 = {
       img: "img/3-l1/6.jpg",
     },
   ],
+  4: [
+    {
+      id: "passport",
+      word: "passport",
+      translate: "паспорт",
+      img: "img/3-l4/1.jpg",
+    },
+    {
+      id: "ticket",
+      word: "ticket",
+      translate: "білет",
+      img: "img/3-l4/2.jpg",
+    },
+    {
+      id: "plane",
+      word: "plane",
+      translate: "літак",
+      img: "img/3-l4/3.gif",
+    },
+    {
+      id: "money",
+      word: "money",
+      translate: "гроші",
+      img: "img/3-l4/4.gif",
+    },
+    {
+      id: "suitcase",
+      word: "suitcase",
+      translate: "валіза",
+      img: "img/3-l4/5.jpg",
+    },
+    {
+      id: "taxi",
+      word: "taxi",
+      translate: "таксі",
+      img: "img/3-l4/6.gif",
+    },
+  ],
+  5: [
+    {
+      id: "morning",
+      word: "morning",
+      translate: "ранок",
+      img: "img/3-l5/1.jpg",
+    },
+    {
+      id: "letter",
+      word: "letter",
+      translate: "білет",
+      img: "img/3-l5/2.gif",
+    },
+    {
+      id: "postcard",
+      word: "postcard",
+      translate: "листівка",
+      img: "img/3-l5/3.jpg",
+    },
+    {
+      id: "parcel",
+      word: "parcel",
+      translate: "посилка",
+      img: "img/3-l5/4.gif",
+    },
+    {
+      id: "afternoon",
+      word: "afternoon",
+      translate: "день",
+      img: "img/3-l5/5.jpg",
+    },
+    {
+      id: "evening",
+      word: "evening",
+      translate: "вечір",
+      img: "img/3-l5/6.gif",
+    },
+    {
+      id: "watch TV",
+      word: "watch TV",
+      translate: "дивитися телевізор",
+      img: "img/3-l5/7.gif",
+    },
+  ],
 };
 
 let AllWordLists2 = {
