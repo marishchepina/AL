@@ -119,6 +119,158 @@ let AllWordLists3 = {
       img: "img/3-l5/7.gif",
     },
   ],
+  7: [
+    {
+      id: "meat",
+      word: "meat",
+      translate: "м'ясо",
+      img: "img/3-l7/1.jpg",
+    },
+    {
+      id: "exited",
+      word: "exited",
+      translate: "захоплений",
+      img: "img/3-l7/2.gif",
+    },
+    {
+      id: "panda",
+      word: "panda",
+      translate: "панда",
+      img: "img/3-l7/3.gif",
+    },
+    {
+      id: "China",
+      word: "China",
+      translate: "Китай",
+      img: "img/3-l7/4.gif",
+    },
+    {
+      id: "leaf",
+      word: "leaf",
+      translate: "листок",
+      img: "img/3-l7/5.gif",
+    },
+  ],
+  8: [
+    {
+      id: "wake up",
+      word: "wake up",
+      translate: "прокидатись",
+      img: "img/3-l8/1.gif",
+    },
+    {
+      id: "early",
+      word: "early",
+      translate: "рано",
+      img: "img/3-l8/2.jpg",
+    },
+    {
+      id: "slow",
+      word: "slow",
+      translate: "повільно",
+      img: "img/3-l8/3.gif",
+    },
+    {
+      id: "bird",
+      word: "bird",
+      translate: "пташка",
+      img: "img/3-l8/4.gif",
+    },
+    {
+      id: "late",
+      word: "late",
+      translate: "пізно",
+      img: "img/3-l8/5.jpg",
+    },
+    {
+      id: "want",
+      word: "want",
+      translate: "хотіти",
+      img: "img/3-l8/6.gif",
+    },
+  ],
+  9: [
+    {
+      id: "cook",
+      word: "cook",
+      translate: "готувати",
+      img: "img/3-l9/1.gif",
+    },
+    {
+      id: "learn",
+      word: "learn",
+      translate: "вчити",
+      img: "img/3-l9/2.gif",
+    },
+    {
+      id: "talk",
+      word: "talk",
+      translate: "говорити",
+      img: "img/3-l9/3.gif",
+    },
+    {
+      id: "bored",
+      word: "bored",
+      translate: "нудьгувати",
+      img: "img/3-l9/4.gif",
+    },
+    {
+      id: "home",
+      word: "home",
+      translate: "дім",
+      img: "img/3-l9/5.gif",
+    },
+    {
+      id: "doorbell",
+      word: "doorbell",
+      translate: "дверна ручка",
+      img: "img/3-l9/6.jpg",
+    },
+    {
+      id: "ring",
+      word: "ring",
+      translate: "дзвінок",
+      img: "img/3-l9/7.gif",
+    },
+  ],
+  10: [
+    {
+      id: "make",
+      word: "make",
+      translate: "робити",
+      img: "img/3-l10/1.gif",
+    },
+    {
+      id: "wash",
+      word: "wash",
+      translate: "мити",
+      img: "img/3-l10/2.gif",
+    },
+    {
+      id: "dish",
+      word: "dish",
+      translate: "страва",
+      img: "img/3-l10/3.jpg",
+    },
+    {
+      id: "floor",
+      word: "floor",
+      translate: "підлога",
+      img: "img/3-l10/4.jpg",
+    },
+    {
+      id: "strawberry",
+      word: "strawberry",
+      translate: "клубніка",
+      img: "img/3-l10/5.png",
+    },
+    {
+      id: "taste",
+      word: "taste",
+      translate: "куштувати",
+      img: "img/3-l10/6.gif",
+    },
+  ],
 };
 
 let AllWordLists2 = {
