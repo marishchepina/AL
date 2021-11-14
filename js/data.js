@@ -271,6 +271,152 @@ let AllWordLists3 = {
       img: "img/3-l10/6.gif",
     },
   ],
+  11: [
+    {
+      id: "go shopping",
+      word: "go shopping",
+      translate: "йти по покупки",
+      img: "img/3-l11/1.gif",
+    },
+    {
+      id: "library",
+      word: "library",
+      translate: "бібліотека",
+      img: "img/3-l11/2.gif",
+    },
+    {
+      id: "cinema",
+      word: "cinema",
+      translate: "кіно",
+      img: "img/3-l11/3.gif",
+    },
+    {
+      id: "supermarket",
+      word: "supermarket",
+      translate: "супермаркет",
+      img: "img/3-l11/4.gif",
+    },
+    {
+      id: "buy",
+      word: "buy",
+      translate: "купувати",
+      img: "img/3-l11/5.gif",
+    },
+    {
+      id: "rope",
+      word: "rope",
+      translate: "мотузка",
+      img: "img/3-l11/6.gif",
+    },
+  ],
+  12: [
+    {
+      id: "wait",
+      word: "wait",
+      translate: "чекати",
+      img: "img/3-l12/1.gif",
+    },
+    {
+      id: "move",
+      word: "move",
+      translate: "рухатись",
+      img: "img/3-l12/2.gif",
+    },
+    {
+      id: "chase",
+      word: "chase",
+      translate: "ганятися",
+      img: "img/3-l12/3.gif",
+    },
+    {
+      id: "stop",
+      word: "stop",
+      translate: "стоп",
+      img: "img/3-l12/4.jpg",
+    },
+    {
+      id: "thief",
+      word: "thief",
+      translate: "злодій",
+      img: "img/3-l12/5.gif",
+    },
+    {
+      id: "brave",
+      word: "brave",
+      translate: "сміливий",
+      img: "img/3-l12/6.gif",
+    },
+  ],
+  13: [
+    {
+      id: "toothbrush",
+      word: "toothbrush",
+      translate: "зубна щітка",
+      img: "img/3-l13/1.gif",
+    },
+    {
+      id: "half past five",
+      word: "half past five",
+      translate: "5:30",
+      img: "img/3-l13/2.jpg",
+    },
+    {
+      id: "concert",
+      word: "concert",
+      translate: "концерт",
+      img: "img/3-l13/3.gif",
+    },
+    {
+      id: "towel",
+      word: "towel",
+      translate: "рушник",
+      img: "img/3-l13/4.gif",
+    },
+    {
+      id: "shampoo",
+      word: "shampoo",
+      translate: "шампунь",
+      img: "img/3-l13/5.gif",
+    },
+    {
+      id: "argue",
+      word: "argue",
+      translate: "спорити",
+      img: "img/3-l13/6.gif",
+    },
+  ],
+  14: [
+    {
+      id: "ready",
+      word: "ready",
+      translate: "готовий",
+      img: "img/3-l14/1.gif",
+    },
+    {
+      id: "trumpet",
+      word: "trumpet",
+      translate: "труба",
+      img: "img/3-l14/2.gif",
+    },
+    {
+      id: "drums",
+      word: "drums",
+      translate: "барабани",
+      img: "img/3-l14/3.gif",
+    },
+    {
+      id: "keyboard",
+      word: "keyboard",
+      translate: "клавіатура",
+      img: "img/3-l14/4.gif",
+    },
+    {
+      id: "tambourine",
+      word: "tambourine",
+      translate: "бубен",
+      img: "img/3-l14/5.gif",
+    },
+  ],
 };
 
 let AllWordLists2 = {
